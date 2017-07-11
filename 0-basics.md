@@ -6,9 +6,7 @@ flags are options you can add to a command: for example, if you want to list all
 
 ## man
 man is the command that you will need all along this hacking session. It stands for 'manual' and displays the manual of a command, i. e. what the command does/can do, which options are possible or not, what input and output are etc. The output of man is also called a manpage.
-Almost all commands (all that we will deal with today) have manpages that are provided together with the program
-exercise: If you don't want the default manpage for a program, how can you tell man to use another file?
-answer: man -C file (just lookup the manpage of man)
+Almost all commands (all that we will deal with today) have manpages that are provided together with the program. 
 
 ## wildcards
 Wildcards are a very useful tool. They allow you to apply a command to all files that have a certain structure. There are many different wildcards, the most useful is `*`. `*` means: any set of characters that doesn't contain `/`. So for example `*.jpg` designs all files that end with `.jpg` (`a.jpg`, `abcd.png.jpg` and so on). However, it will not match `a/b.jpg`, but `*/*.jpg` will match it.   
