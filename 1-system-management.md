@@ -1,6 +1,6 @@
 ## System management
 
-### Power on/off
+### Exercise 1: Power on/off
 
 You can use the shell to do various sytem management tasks. To shut down, reboot,
 or put your computer in suspend mode, you can use `reboot`, `poweroff`, or
@@ -9,14 +9,14 @@ or put your computer in suspend mode, you can use `reboot`, `poweroff`, or
 a) Try to put your computer into suspend, and wake it back up.
 b) Reboot your computer from the command line.
 
-### Space left on disk
+### Exercise 2: Space left on disk
 
 Useful commands: `df`, `dh`
 
 a) Find out what size (in MB) the exercise directory has.
 b) Find out how much space is used by your root directory `/`.
 
-### User management
+### Exercise 3: User management
 
 Useful commands: `useradd`, `userdel`, `groupadd`, `groupdel`, `gpasswd`, `passwd`
 
