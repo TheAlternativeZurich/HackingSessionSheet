@@ -38,6 +38,7 @@ c. How many lines, words and characters does this file have?
 d. Make a copy of the file and compare both files.
 e. Append text to the copied file and compare with the original.
 f. Assign user root as new owner of the original file and check the change.
+	Hint: check first the owners of the files.
 g. Change the file attributes to makle it write protected and try to append text again.
 h. Delete both files and check they were deleted.
 

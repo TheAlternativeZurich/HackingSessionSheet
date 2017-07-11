@@ -18,9 +18,10 @@ some added text.
 ^C
 	diff capture.txt capture-copy.txt
 
-f.	chown root capture.txt
-error message due to lack of rights --> use 'sudo'
+f.	ls -l
 	chown root capture.txt
+error message due to lack of rights --> use 'sudo'
+	sudo chown root capture.txt
 	ls -l
 
 g.	chmod -w capture-copy.txt
