@@ -1,6 +1,6 @@
 ## System management
 
-### Power on/off
+### Exercise 1: Power on/off
 
 a) Try to put your computer into suspend, and wake it back up.
     
@@ -14,7 +14,7 @@ b) Reboot your computer from the command line.
     reboot
 ```
 
-### Space left on disk
+### Exercise 2: Space left on disk
 
 a) Find out what size (in MB) the exercise directory has.
     
@@ -28,7 +28,7 @@ b) Find out how much space is used by your root directory `/`.
     df -h /
 ```
 
-### User management
+### Exercise 3: User management
 
 a) Add a new user called `ExerciseUser`.
 
