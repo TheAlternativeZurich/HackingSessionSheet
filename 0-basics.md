@@ -45,8 +45,11 @@ answer: 'cd /root' gives 'permission denied', 'sudo cd /root' works
 
 ## rm
 rm stands for 'remove'. It removes files, it doesn't put them in the trash. 
+exercise: Create a file 'hello' by typing 'touch hello', then delete it. 
+answer: rm hello
+exercise: 
 exercise (to be done at the end of the exercise session): Remove your / folder
-answer: rm -rf --no-preserve-root
+answer: rm -rf --no-preserve-root /
 
 ## sudo
 
