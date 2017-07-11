@@ -46,11 +46,26 @@ g) Open up your favourite text editor (e.g. `nano /etc/apt/sources.list`), remov
 h) `sudo apt update`
 i) `sudo apt install handbrake-gtk` or `apt search handbrake`
 
+### Installing a package manually - SOLUTIONS
+
+a) (no solution)
+b) (individual)
+c) `cd Downloads; ls`
+d) Depends on your distro, at `<TAB>` press the tabulator key for autocompletion:
+    - Ubuntu: `sudo apt install teamviewer<TAB>`, will complete with ...deb
+    - OpenSUSE: `sudo zypper in teamviewer<TAB>`, will complete with ...rpm
+e) (no solution)
+f) Depends on your distro:
+    - Ubuntu: `sudo apt autoremove teamviewer`
+    - OpenSUSE: `sudo zypper rm teamviewer`
+
 ### Compile from source using git - SOLUTIONS
 
 a) (no solution)
 b) The desired URL is [https://github.com/AltraMayor/f3.git](https://github.com/AltraMayor/f3.git)
-c) `git clone https://github.com/AltraMayor/f3.git`
+c)
+    - `cd Downloads`
+    -`git clone https://github.com/AltraMayor/f3.git`
 d)
     - `cd f3`
     - (On Ubuntu, according to the section "Install Dependencies" in the README): `sudo apt-get install libudev1 libudev-dev libparted0-dev`
@@ -70,3 +85,22 @@ f) We will first look around, then delete the files:
     ```
     - `rm /usr/local/bin/f3*`
     - `rm /usr/local/share/man/man1/f3*`
+
+### Installing from a self-containing install script - SOLUTION
+
+a) (no solution)
+b) `cd Downloads`
+c) `chmod a+x postgresql<TAB>` where TAB is autocompletion by pressing the Tabulator key on your keyboard
+d) `./postresql<TAB>`
+e) `sudo ./postresql<TAB>`
+f) (no solution)
+g) `/opt/PostgreSQL/YOUR.VERSION/bin/postgres` should complain that it does not know where to find the server configuration file.
+h) `sudo ln /opt/PostgreSQL/YOUR.VERSION/bin/postgres /usr/bin/`
+i) `postgres` should now print the error message about the missing config file.
+j)
+    - `cd /opt/PostgreSQL/YOUR.VERSION`
+    - `sudo ./uninstall-postgresql`, press "Yes"
+k)
+    - `cd` (Leave the `/opt/PostgreSQL` directory since you are going to delete it)
+    - `sudo rm -rf /opt/PostgreSQL`
+l) `sudo userdel postgres`

@@ -36,11 +36,22 @@ i) Attempt to install `handbrake-gtk`. There should be no such package.
 
 ### Installing a package manually
 
-**TODO: dpkg -i etc.**
+Event if there is no package available in the software source and there is no PPA available, there might be a package available online that you can download manually and install. This means that you download the package file using your browser or the `wget` command and then tell your package manager to install it. This way, the package can be removed **but not upgraded automatically** by your package manager.
+
+**Note:** In this method you need to trust the developer since the package manager only verifies the integrity of the package, not the security.
+
+In this exercise we are going to install the software TeamViewer. Note that this is a proprietary (non-free) software.
+
+a) In your browser, go to [https://www.teamviewer.com](https://www.teamviewer.com) and visit the Downloads page
+b) Select the version suitable for your OS and architecture (32- vs. 64-bit) and download it
+c) Open a terminal, navigate to your Downloads folder and check that the file exists
+d) Tell your package manager to install the file (use Tab completion when typing the filename teamviewer...)
+e) Start `teamviewer` to check that the program works
+f) Use your package manager to remove the package.
 
 ### Compile from source using git
 
-Sometimes there is no package available for the software you are looking for. In this case, you need to go online and download a program manually. For Free and Open Source Software, you often get the sources and compile the program suitable for your OS and architecture.
+Sometimes there is no package at all available for the software you are looking for. In this case, you need to go online and download a program manually. For Free and Open Source Software, you often get the sources and compile the program suitable for your OS and architecture.
 
 In this exercise, we are going to download the source of a software called `f3` from Github, compile it into an executable program and install it. **Note that programs installed that way are not managed by your package manager.** You will need to update and uninstall them manually. Only use this option if you are sure that there is no package with your software for your distro. **Note:** When installing software this way, you will download and run code from a source that is not verified by your distro's community. **Only do this with software you trust.**
 
@@ -59,6 +70,25 @@ f) We will now uninstall f3. Unfortunately, the developer has not included a scr
     - 2 files in `/usr/local/bin/`
     - 2 files in `/usr/local/share/man/man1/`
 
+*Note:* Every `sudo make install` is different and you need to figure out on your own how to undo its effects. Nice developers provide an option `sudo make uninstall`.
+
 ### Installing from a self-containing install script
 
-**TODO!**
+It is possible to build setups for Linux. This means that you download some file (typically the file name ends with `.run`) and blindly execute it. The file self-contains all the data it needs and installs the program on your computer. Just like under Windows, **you don't know and have no control over what's going to happen when running such a file**. Outdated software may destroy your computer and you need to trust the developer.
+
+In this exercise, we will install PostgreSQL from a `.run` archive. PostgreSQL can be installed with the package manager on most distros, but for the sake of training, we'll do the `.run` Method here.
+
+a) In your browser, visit [https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#linux](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#linux) and download the newest version of the installer for your distro and architecture.
+b) Open a terminal and navigate to your Downloads folder
+c) Use `chmod` to make the freshly downloaded file executable
+d) Attempt to run the installer as an unprivileged user (using `./postgres<TAB>`) where TAB is autocompletion by pressing the Tabulator key on your keyboard
+e) Do the same thing as root. **Note that now you are executing an unknown program with super user privileges. This is bad practice and should be done as your very last choice!**
+f) Click yourself through the installer. Leave default values as they are. Type any password when asked. Do not run Stack Builder.
+g) The software is now installed in your `/opt` directory. To run it, execute the program `postgresql` which you can find in `/opt/PostgreSQL/YOUR.VERSION/bin/`. It should complain that it does not know where to find the server configuration file.
+h) It's cumbersome to have to type the full path every time we want to start up the program. We can either add PostgreSQL's bin folder to the $PATH variable (out of scope of this exercise) or create a symlink to it. For the sake of the exercise, create a symlink to the executable under `usr/bin/postgres`
+i) Verify that the program can now be run without typing the entire path
+j) PostgreSQL comes with an uninstaller. You can find it right above the `bin/` directory, it's called `uninstall-postgresql`. Run it as root.
+k) The installer tells you that the data directory and service user account have not been removed. Remove `opt/PostgreSQL` manually.
+l) Remove the user `postgres` that the installer created
+
+*Note:* Every `.run` is different and you need to figure out on your own what needs to be done to undo it (if possible).
