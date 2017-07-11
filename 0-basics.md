@@ -9,7 +9,7 @@ man is the command that you will need all along this hacking session. It stands 
 Almost all commands (all that we will deal with today) have manpages that are provided together with the program. 
 
 ## wildcards
-Wildcards are a very useful tool. They allow you to apply a command to all files that have a certain structure. There are many different wildcards, the most useful is `*`. `*` means: any set of characters that doesn't contain `/`. So for example `*.jpg` designs all files that end with `.jpg` (`a.jpg`, `abcd.png.jpg` and so on). However, it will not match `a/b.jpg`, but `*/*.jpg` will match it.   
+Wildcards are a very useful tool. They allow you to apply a command to all files that have a certain structure. There are many different wildcards, the most useful is `*`. `*` means: any set of characters. So for example `*.jpg` designs all files that end with `.jpg` (`a.jpg`, `abcd.png.jpg` and so on). 
 
 ## sudo
 Any user cannot do anything on your computer, some users do not have read or write accedd to some files or directories. Only the superuser can to everything. To execute `command` as a superuser, type `sudo command`. The program then asks the user for his password (if he is in the sudo group) before executing the command. superusers have all rights, including the right to scrap the computer, so be careful if you execute something with sudo since your computer may warn you (sometimes) but he will not stop you from damaging the computer. 
