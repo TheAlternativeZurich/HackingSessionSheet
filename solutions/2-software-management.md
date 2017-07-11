@@ -31,3 +31,28 @@ h) `sudo zypper rm youtube-dl` (or `sudo zypper remove youtube-dl`)
 i)
     - `df` shows your current disk usage (use `df -h` for human-readable numbers). On the right hand side, you can see "Mounted on". Look for `/`, which stands for your system partition. The used and free space can be seen in the other columns.
     - To clean the package cache: `sudo zypper clean`
+
+### Compile from source using git - SOLUTIONS
+
+a) (no solution)
+b) The desired URL is [https://github.com/AltraMayor/f3.git](https://github.com/AltraMayor/f3.git)
+c) `git clone https://github.com/AltraMayor/f3.git`
+d)
+    - `cd f3`
+    - (On Ubuntu, according to the section "Install Dependencies" in the README): `sudo apt-get install libudev1 libudev-dev libparted0-dev`
+    - `make`
+    - `sudo make install` (Without sudo, the command fails due to missing permissions, you are supposed to figure that out on your own)
+e) `f3read` should complain "f3read: The disk path was not specified"
+f) We will first look around, then delete the files:
+    - `ls /usr/local/bin/f3*`
+    ```txt
+    /usr/local/bin/f3read
+    /usr/local/bin/f3write
+    ```
+    - `ls /usr/local/share/man/man1/f3*`
+    ```txt
+    /usr/local/share/man/man1/f3read.1
+    /usr/local/share/man/man1/f3write.1
+    ```
+    - `rm /usr/local/bin/f3*`
+    - `rm /usr/local/share/man/man1/f3*`
