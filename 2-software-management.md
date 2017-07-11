@@ -78,7 +78,7 @@ It is possible to build setups for Linux. This means that you download some file
 
 In this exercise, we will install PostgreSQL from a `.run` archive. PostgreSQL can be installed with the package manager on most distros, but for the sake of training, we'll do the `.run` Method here.
 
-a) In your browser, visit [https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#linux](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#linux) and download the installer for your distro and architecture.
+a) In your browser, visit [https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#linux](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#linux) and download the newest version of the installer for your distro and architecture.
 b) Open a terminal and navigate to your Downloads folder
 c) Use `chmod` to make the freshly downloaded file executable
 d) Attempt to run the installer as an unprivileged user (using `./postgres<TAB>`) where TAB is autocompletion by pressing the Tabulator key on your keyboard
