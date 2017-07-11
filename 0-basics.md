@@ -43,8 +43,6 @@ answer: `cd` or `cd ~` or `cd /home/(User)`
 `rm` stands for `remove`. It removes files, it doesn't put them in the trash. 
 exercise: Create a file `hello` by typing `touch hello`, then delete it. 
 answer: `rm hello`
-exercise (to be done at the end of the exercise session): Remove your `/` folder
-answer: `rm -rf --no-preserve-root /`
 
 ## mkdir and rmdir
 `mkdir` stands for `make directory`, rmdir for `remove directory`. 
