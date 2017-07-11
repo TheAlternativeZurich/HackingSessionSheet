@@ -18,7 +18,21 @@ i) Look at the disk usage of your system partition (hint: `df`). Then clean the 
 
 *Skip this exercise if your distribution is not Ubuntu-based.*
 
-**TODO!**
+If a program is not in the official package sources, you might still be able to install it using your package manager. Under Ubuntu, a developer can create a Personal Package Archive (PPA), sort of a personal software channel which you can integrate into your sources list. After refreshing your sources, you may then install and upgrade software from the PPA as if it was an official source.
+
+**Caution:** Anyone can own a PPA and distribute arbitrary software over it. Make sure you trust the developer!
+
+In this exercise, we are going to install a video transcoder called Handbrake.
+
+a) Google for "Handbrake PPA" and pick the Launchpad link
+b) Use the command `add-apt-repository` to add the PPA to your sources as described on Launchpad
+c) Update your software sources
+d) Install `handbrake-gtk` using your package manager
+e) In your start menu, search for "Handbrake" and open the program. Its logo shows a pineapple. The program should open.
+f) Uninstall `handbrake-gtk`
+g) We are now going to remove the PPA from the system. There is no command to do this. Edit the file `/etc/apt/sources.list` and remove the two lines that contain "stebbins".
+h) Refresh your software sources again.
+i) Attempt to install `handbrake-gtk`. There should be no such package.
 
 ### Installing a package manually
 
