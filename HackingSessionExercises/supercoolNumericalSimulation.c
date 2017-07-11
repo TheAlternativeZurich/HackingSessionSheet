@@ -6,6 +6,8 @@
 
 #include <stdio.h>
 #include <unistd.h>
+#include <time.h>
+#include <stdlib.h>
 
 int main() {
     printf("Starting calculation...\n");
@@ -25,9 +27,25 @@ int main() {
     b++;
     int temp = a;
     a = b + c;
-    printf("Just so you know that i'm actually doing something i just calculated %d \n", a);
+    //printf("Just so you know that i'm actually doing something i just calculated %d \n", a);
+	
 
-    sleep (2);
+    srand(time(NULL));
+    int i, r;
+    for(i=0;i<=200000;i++){
+    	r = rand();
+	printf("%d ", r);
+	sleep (0.8);
+	if (i==1000){
+		printf ("\n preprocessing done\n");
+		sleep(1);
+	}else if (i==150000){
+		printf("\n Main calculations done. Starting Clean up \n");
+		sleep(1);
+	}
+    }
+
+    //sleep (2);
 
     c = temp+1;
     a = temp;
@@ -44,7 +62,7 @@ int main() {
         result[1] = '2';
     }
 
-    printf("%s\n", result);
+    //printf("%s\n", result);
 
     // save the result in the res file
     FILE *fp;
