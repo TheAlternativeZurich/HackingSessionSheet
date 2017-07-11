@@ -20,4 +20,14 @@ i)
 
 #### Under OpenSUSE
 
-*TODO!*
+a) `sudo zypper ref` (or `sudo zypper refresh`)
+b) `sudo zypper up` (or `sudo zypper update`), then press ENTER when asked `[y/n/?] (y)`. Note the y in parentheses: it means that if you simply press ENTER (without typing anything) this option will be chosen.
+c) (skip this under OpenSUSE)
+d) `zypper se youtube-dl` (or `zypper search youtube-dl`)
+e) `sudo zypper in youtube-dl` (or `sudo zypper install youtube-dl`)
+f) `youtube-dl` should display something like "Usage: ..."
+g) `man youtube-dl`, (if asked, press ENTER), finally quit with `q`
+h) `sudo zypper rm youtube-dl` (or `sudo zypper remove youtube-dl`)
+i)
+    - `df` shows your current disk usage (use `df -h` for human-readable numbers). On the right hand side, you can see "Mounted on". Look for `/`, which stands for your system partition. The used and free space can be seen in the other columns.
+    - To clean the package cache: `sudo zypper clean`
