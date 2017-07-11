@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
-echo -n "running..."
-pandoc $(ls [0-9]-*.md) -o out.pdf
+echo -n "exercises..."
+pandoc $(ls [0-9]-*.md) -o exercises.pdf
+echo "ok"
+echo -n "solutions..."
+pandoc $(ls solutions/[0-9]-*.md) -o solutions.pdf
 echo "ok"
