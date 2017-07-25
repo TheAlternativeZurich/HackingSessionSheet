@@ -34,6 +34,7 @@ a) Make a file `hello` using `touch hello`. Now rename this file in `world`.
 b) Move this file into a directory. (e.g. your `Downloads` folder).
 
 ## cd
+
 `cd` stands for "change directory".
 
 a) Change into the `/usr/bin` directory, then list all files in there.
