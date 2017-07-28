@@ -20,6 +20,10 @@ Wildcards are a very useful tool. They allow you to apply a command to all files
 
 Not every user can do anything on your computer, some users do not have read or write access to some files or directories. Only the superuser can do everything. To execute `command` as a superuser, type `sudo command`. The program then asks the user for his password (if he is in the sudo group) before executing the command. Superusers have all rights, including the right to scrap the computer, so be careful if you execute something with sudo since your computer may warn you (sometimes) but he will not stop you from damaging the computer. 
 
+### Exercise 0: man
+
+Before you can start to learn anything, you should make yourself familiar with the `man` command. Type `man man` in the commandshell and hit enter. You don't have to read the whole thing, but skimming over it is definitely a good idea. Also, while the manual of `man` is open, you can hit `h` to make a window with keyboard shortcuts pop up. This is a good opportunity to take a look at them, because it is vital that you know how to search a manpage and how to move around within it quickly!
+
 ### Exercise 1: ls
 
 `ls` stands for "list".
@@ -63,4 +67,3 @@ b) Can you remove your home directory with rmdir?
 a) Make a `Backup` directory with `mkdir` and copy your `.bashrc` (bash configuration file) there. Check if it worked with `ls`.
 b) Copy a directory into `Backup/` (e.g. your `Downloads` directory). What is the differece to copying a file?
 c) Remove the `Backup/` directory you just created.
-
