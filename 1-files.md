@@ -12,14 +12,6 @@ Syntax:
     -a	--append	append input to the given file(s), do not overwrite.
 ```
 
-###cat
-`cat` - con*cat*enate files and print on the standard output.
-
-Syntax:
-```
-    cat [OPTION]... [FILE]...
-```
-
 ###wc
 `wc` stands for "wordcount". It prints newline-, word-, and byte-counts for each file, and a summary line if more than one FILE is specified.
 

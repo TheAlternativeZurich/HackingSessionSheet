@@ -67,3 +67,10 @@ b) Can you remove your home directory with rmdir?
 a) Make a `Backup` directory with `mkdir` and copy your `.bashrc` (bash configuration file) there. Check if it worked with `ls`.
 b) Copy a directory into `Backup/` (e.g. your `Downloads` directory). What is the differece to copying a file?
 c) Remove the `Backup/` directory you just created.
+
+### Exercise 7: cat
+
+`cat` stands for con*cat*enate files and print to the standard output.
+
+a) Look at the output of whatever file you desire.
+
