@@ -1,6 +1,6 @@
 ## Files
 
-This section aims to train usage with basic commands for files.  Here you will find a basic use and most common syntax of the commands, as well as some exercises at the end.  However the commands are much more powerfull and you are invited to self-explore and experiment with other option attributes and alternative syntaxes (Hint: remember command `man` from the section *basics*).
+This section aims to train usage with basic commands for files.  Here you will find a basic use and most common syntax of the commands, as well as some exercises at the end.  However the commands are much more powerful and you are invited to self-explore and experiment with other option attributes and alternative syntaxes (Hint: remember command `man` from the section *basics*).
 
 
 ###tee
@@ -99,7 +99,6 @@ Syntax:
 ###grep
 `grep` - searches the named input FILEs for lines containing a match to the given PATTERN. By default, grep prints the matching lines. 
 
-Fun fact: `grep`'s name comes from *g*lobally search a *r*egular *e*xpression and *p*rint. This is a wordplay on the `ed` command g/re/p, which searches for a regex expression and prints it. `ed` is one of the very first text editors. Nowadays, no one uses `ed` anymore because there is no reason to do so (maybe apart from bragging rights), but `ed` has influenced a *lot* of commands commonly used in Unix.
 
 Syntax:
 ```
