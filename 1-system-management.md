@@ -1,4 +1,4 @@
-## System management
+## System Management
 
 ### Exercise 1: Power on/off
 
@@ -7,14 +7,14 @@ You can use the shell to do various system management tasks. To shut down, reboo
 a) Try to put your computer into suspend, and wake it back up.
 b) Reboot your computer from the command line.
 
-### Exercise 2: Space left on disk
+### Exercise 2: Space Left on Disk
 
 Useful commands: `df`, `dh`
 
 a) Find out what size (in MB) the exercise directory has.
 b) Find out how much space is used by your root directory `/`.
 
-### Exercise 3: User management
+### Exercise 3: User Management
 
 Useful commands: `useradd`, `userdel`, `groupadd`, `groupdel`, `gpasswd`, `passwd`
 
@@ -23,7 +23,6 @@ b) Add a new group called `ExerciseGroup`.
 c) Add your new user to the new group.
 d) Remove the user and the group again.
 
-Hint:
-
-If you are confused by `gpasswd` and `passwd`, consider the following:
-One of them is used to set the password for a user, the other is used to add a user to a group.
+    Hint:
+    If you are confused by `gpasswd` and `passwd`, consider the following:
+    One of them is used to set the password for a user, the other is used to add a user to a group.

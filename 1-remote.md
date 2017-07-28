@@ -1,6 +1,6 @@
 ## Remote
 
-### Exercise 1 (ssh, scp)
+### Exercise 1: ssh, scp
 
 In this exercise you will learn how to access a compute cluster and do stuff on it and get results. For this please first find the C program called `supercoolNumercialSimulation.c`.  `ssh` and `scp` are the most important commands you will use within this exercise. `ssh` is used to connect to a machine remotely, while `scp` is used to copy files.  For this exercise, it's probably best if you don't lose yourself in trying to understand how `ssh`, resp. `scp` works exactly, because there is quite a bit of cryptography and complicated network stuff involved. To get a general idea of how it works: `ssh` stands for "Secure Shell" and `scp` stands for "Secure Copy". Both make use of the cryptographic library `openSSL` in order to be able to exchange your data securely.
 
@@ -12,7 +12,7 @@ e) Again access the machine and compile the program.
 f) Run it.
 g) Find it's output and copy it to your remoteExercise directory on your local machine.
 
-### Exercise 2 (tmux)
+### Exercise 2: tmux
 
 This exercise is about using the terminal multiplexer tmux. Using it gives you several advantages, here are a few:
 

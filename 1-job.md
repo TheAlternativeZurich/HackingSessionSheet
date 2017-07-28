@@ -1,6 +1,6 @@
 ## Jobs
 
-### Exercise 1 (fg, bg, &, top, htop, kill, pkill, killall)
+### Exercise 1: fg, bg, &, top, htop, kill, pkill, killall
 
 a) Install `htop` if you do not already have it.
 b) Navigate to the `jobs` directory.
@@ -16,7 +16,7 @@ h) Now move it back to be a background job. Can you still kill it with Ctrl+C?
 i) Try and find out the pid (process id) of your started process (you might want to do this in a different terminal).
 j) Use the kill command to get rid of the process.
 
-### Exercise 2  (ps, kill, killall, pkill)
+### Exercise 2: ps, kill, killall, pkill
 
 Do the same as above but this time without using top or htop and use a different method to kill it. You also do not need to do all that background foreground stuff again.
 

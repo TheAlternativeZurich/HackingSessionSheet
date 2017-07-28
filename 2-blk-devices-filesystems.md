@@ -32,10 +32,8 @@ You can check if this worked by looking at the output of `file partition1` and `
 ### Exercise 3: Using dd
 
 WARNING: Don't do the following to your actual file systems! You can destroy your file systems!
-Especially don't run any of the commands as root.
-
+Especially don't run any of the commands as root.  
 With `dd` you can write images to a disk, like an image of a Linux distribution.
 
-a) Write `image.iso` to `TestDisk` using `dd`.
-
-You can check if this worked by looking at the output of `file TestDisk`.
+a) Write `image.iso` to `TestDisk` using `dd`.  
+    You can check if this worked by looking at the output of `file TestDisk`.

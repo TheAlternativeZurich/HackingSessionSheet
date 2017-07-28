@@ -1,7 +1,7 @@
 ## Basics
 This aims to train usage in basic commands.
 
-### flags
+### Flags
 
 flags are options you can add to a command: for example, if you want to list all files including hidden files, you will use the corresponding flag (that you will find in the manual of the program). Flags start with `-` or `--`. For example, `ls -r` lists all files in reverse order, `ls --reverse` does the same. `ls -rR` (yes, bash is case-sensitive) lists all files in reverse order and recursively and is equivalent to `ls -R -r` and to `ls --reverse --recursive`. 
 
@@ -63,6 +63,4 @@ b) Can you remove your home directory with rmdir?
 a) Make a `Backup` directory with `mkdir` and copy your `.bashrc` (bash configuration file) there. Check if it worked with `ls`.
 b) Copy a directory into `Backup/` (e.g. your `Downloads` directory). What is the differece to copying a file?
 c) Remove the `Backup/` directory you just created.
-
-
 

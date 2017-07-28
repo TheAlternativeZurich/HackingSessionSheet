@@ -2,7 +2,7 @@
 
 This exercise is about installing and managing software.
 
-### Package manager
+### Exercise 1: Package manager
 
 a) Refresh the sources of your package manager
 b) Install updates for your system
@@ -14,7 +14,7 @@ g) Open the man page for `youtube-dl`
 h) Remove `youtube-dl` from your system
 i) Look at the disk usage of your system partition (hint: `df`). Then clean the cache of your package manager. Look at the disk usage again: some space should have been freed.
 
-### Ubuntu only: Installing software from PPA
+### Exercise 2: Ubuntu only: Installing software from PPA
 
 *Skip this exercise if your distribution is not Ubuntu-based.*
 
@@ -34,7 +34,7 @@ g) We are now going to remove the PPA from the system. There is no command to do
 h) Refresh your software sources again.
 i) Attempt to install `handbrake-gtk`. There should be no such package.
 
-### Installing a package manually
+### Exercise 3: Installing a package manually
 
 Event if there is no package available in the software source and there is no PPA available, there might be a package available online that you can download manually and install. This means that you download the package file using your browser or the `wget` command and then tell your package manager to install it. This way, the package can be removed **but not upgraded automatically** by your package manager.
 
@@ -49,7 +49,7 @@ d) Tell your package manager to install the file (use Tab completion when typing
 e) Start `teamviewer` to check that the program works
 f) Use your package manager to remove the package.
 
-### Compile from source using git
+### Exercise 4: Compile from source using git
 
 Sometimes there is no package at all available for the software you are looking for. In this case, you need to go online and download a program manually. For Free and Open Source Software, you often get the sources and compile the program suitable for your OS and architecture.
 
@@ -72,7 +72,7 @@ f) We will now uninstall f3. Unfortunately, the developer has not included a scr
 
 *Note:* Every `sudo make install` is different and you need to figure out on your own how to undo its effects. Nice developers provide an option `sudo make uninstall`.
 
-### Installing from a self-containing install script
+### Exercise 5: Installing from a self-containing install script
 
 It is possible to build setups for Linux. This means that you download some file (typically the file name ends with `.run`) and blindly execute it. The file self-contains all the data it needs and installs the program on your computer. Just like under Windows, **you don't know and have no control over what's going to happen when running such a file**. Outdated software may destroy your computer and you need to trust the developer.
 
