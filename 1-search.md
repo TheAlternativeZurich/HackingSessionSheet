@@ -1,16 +1,15 @@
 ## Searching
 
 *These exercises cover the `grep` and `find` commands in detail.*  
-Whether you're working on code or just want to look for some text in a huge document, sooner or later you will need to know how to search for certain text patterns within files.
 
-We're going to take at the arguably the two most important commands that perform "search-like" operations. Their names are `grep` and `find`. `find`, is quite self explanatory: It is a command that is used for finding certain files. `grep` is a bit more complex, but arguably even more important. This command allows you to search a file's contents.
+We're going look at two of the most important commands that perform "search-like" operations. Their names are `grep` and `find`. `find` is a command that is used for finding certain files. `grep` is a bit more complex and allows you to search a file's contents.
 
-I would recommend that you do the exercises on both `grep` and `find` - they are incredibly powerful when used in combination. If you have to choose only one, I recommend `grep` because I use it much more often.
+I would recommend that you do the exercises on both `grep` and `find` - they are very powerful when used in combination. If you have to choose only one, I recommend `grep` because I use it much more often.
 
 
 ### Exercise 1: `grep`
 
-`grep` is used to search for complicated textual patterns within files. `grep` searches the text using so-called Regular Expressions (commonly referred to as Regex). Regexes are patterns that encode a set of strings. In other words, a Regex is simply a very efficient way to specify many strings. For example, `un(b|f)ounded` is a Regex that stands for both "unbounded" and "unfounded". As you can see, Regexes make use of some special characters. Unfortunately, there are many Regex standards, and they may differ in the special characters they use. To start off, it's probably a good idea to read ![https://en.wikipedia.org/wiki/Regular_expression#Basic_concepts](https://en.wikipedia.org/wiki/Regular_expression#Basic_concepts). After that, the `grep` manual provides some further information. Other than that, the Internet is a very good source for more complicated Regex examples.
+`grep` searches the text using so-called Regular Expressions (commonly referred to as Regex). Regexes are textual patterns that encode a set of strings. In other words, a Regex is simply an efficient way to specify many strings. For example, `un(b|f)ounded` is a Regex that stands for both "unbounded" and "unfounded". There are many Regex standards, and they may differ in the special characters they use. It's probably a good idea to read [https://en.wikipedia.org/wiki/Regular_expression#Basic_concepts](https://en.wikipedia.org/wiki/Regular_expression#Basic_concepts). After that, the `grep` manual provides some further information. 
 
 Fun fact: `grep`'s name comes from *g*lobally search a *r*egular *e*xpression and *p*rint. This is a wordplay on the `ed` command g/re/p, which searches for a Regex and prints it. `ed` is one of the very first text editors created. Nowadays, no one uses `ed` anymore because there is no reason to do so (maybe apart from bragging rights), but `ed` has influenced a *lot* of commands commonly used in Unix.
 
