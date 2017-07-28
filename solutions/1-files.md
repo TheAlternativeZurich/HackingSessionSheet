@@ -1,66 +1,130 @@
-##Solution
+## Files
 
-a.	`md ~/TempDir`
-	`cd ~/TempDir`
+### Exercise 1
 
-b.	`tee capture.txt`
-This is some text.
-Idea is to test the Linux commands.
-Now is time to end the file.
-`^c`
+a)
+```
+    md ~/TempDir
+    cd ~/TempDir
+```
 
-c.	`ls`
-	`cat capture.txt`
+b)
+```
+    tee capture.txt
+```
+```txt
+    This is some text.
+    The idea is to test the Linux command.
+    Now it's time to end the file.
+    ^C
+```
 
-d.	`wc capture.txt`
+c)
+```
+    ls
+    cat capture.txt
+```
 
-e.	`cp capture.txt capture-copy.txt`
-	`diff capture.txt capture-copy.txt`
+d) 
+```
+    wc capture.txt
+```
 
-f.	`tee -a capture.txt`
-some added text into the original file.
-`^c`
-	`diff capture.txt capture-copy.txt`
+e)
+```
+    cp capture.txt capture-copy.txt
+    diff capture.txt capture-copy.txt
+```
 
-g.	`ls -l`
-	`chown root:users capture.txt`
-You should have received an error message due to lack of rights.
-Hint: use `sudo`
-	`sudo chown root:users capture.txt`
-	`ls -l`
+f)
+```
+    tee -a capture.txt
+```
+```txt
+    some added text into the original file.
+    ^C
+```
+```
+    diff capture.txt capture-copy.txt
+```
 
-h.	`chmod -w capture-copy.txt`
-	`tee -a capture-copy.txt`
-error message because now the file can't be writen
-`^c`  (required to close the tee command)
-Extra exercise: would it be possible to overcome the write restriction using `sudo`?
+g)
+```
+    ls -l
+    chown root:users capture.txt
+```
+- You should have received an error message due to lack of permissions.
+- Hint: use `sudo`.
 
-i.	`echo "Hello World!"`
+```
+    sudo chown root:users capture.txt
+    ls -l
+```
 
-j.	`touch -t 201701310001.30 capture.txt`
-	`ls -l`
+h)
+```
+    chmod -w capture-copy.txt
+    tee -a capture-copy.txt
+```
+- This gives an error message because now the file can't be written to.
+- Press `^C` (required to close the tee command).
+- Extra exercise: Would it be possible to overcome the write restriction using `sudo`?
 
-k.	`ln capture.txt ~/Desktop/capture-link`
+i) 
+```
+    echo "Hello World!"
+```
 
-l.	`file * ~/Downloads/* ~/Pictures/* ~/Music/*`
-	`file * ~/Downloads/* ~/Pictures/* ~/Music/* > file-types.log`
+j)
+```
+    touch -t 201701310001.30 capture.txt
+    ls -l
+```
 
-m.	`less file-types.log`
+k) 
+```
+    ln capture.txt ~/Desktop/capture-link
+```
 
-n.	`grep directory file-types.log`
+l)
+```
+    file * ~/Downloads/* ~/Pictures/* ~/Music/*
+    file * ~/Downloads/* ~/Pictures/* ~/Music/* > file-types.log
+```
 
-o.	`find ~/ -name capture-copy.txt`
-	`find ~/ -name "capture*"`
+m) 
+```
+    less file-types.log
+```
 
-p.	`which ls`
-	`whereis ls`
+n) 
+```
+    grep directory file-types.log
+```
 
-q.	`cd ~/TempDir`	
-	`rm *` __(be sure from where you are executing the command!)__
-Note 1: warning asking to confirm removal of write protected file, confirm with `y`.
-Note 2: note that even file who's owner was changed to root is also deleted!
-Ownership doesn't protect the files.
-	`cd ~`
-	`rmdir TempDir`
+o)
+```
+    find ~/ -name capture-copy.txt
+    find ~/ -name "capture*"
+```
 
+p)
+```
+    which ls
+    whereis ls
+```
 
+q)
+```
+    cd ~/TempDir
+```
+    __Make sure you're in the correct directory__, then execute: 
+```
+    rm * 
+```
+- Note 1: If a warning appears asking to confirm removal of write protected files, confirm with `y`.
+- Note 2: Note that even file who's owner was changed to root is also deleted! Ownership doesn't protect the files.
+```
+    cd ~
+    rmdir TempDir
+```
