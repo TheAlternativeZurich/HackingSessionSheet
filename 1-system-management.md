@@ -2,9 +2,7 @@
 
 ### Exercise 1: Power on/off
 
-You can use the shell to do various sytem management tasks. To shut down, reboot,
-or put your computer in suspend mode, you can use `reboot`, `poweroff`, or
-`systemctl suspend` respectively. (You might need to use `sudo` on your system)
+You can use the shell to do various system management tasks. To shut down, reboot, or put your computer in suspend mode, you can use `reboot`, `poweroff`, or `systemctl suspend` respectively. (You might need to use `sudo` on your system)
 
 a) Try to put your computer into suspend, and wake it back up.
 b) Reboot your computer from the command line.
@@ -25,8 +23,7 @@ b) Add a new group called `ExerciseGroup`.
 c) Add your new user to the new group.
 d) Remove the user and the group again.
 
-HINT:
+Hint:
 
 If you are confused by `gpasswd` and `passwd`, consider the following:
-One of them is used to set the password for a user, the other is used to add
-a user to a group.
+One of them is used to set the password for a user, the other is used to add a user to a group.

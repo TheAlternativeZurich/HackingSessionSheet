@@ -3,7 +3,7 @@
 This exercise is a bit more advanced! It will involve creating/editing partitions
 from the command line and manipulating block devices and file systems.
 
-WARNING: If any of the following excercises require you to run them as root, you
+WARNING: If any of the following exercises require you to run them as root, you
 should not be doing that!
 
 ### Exercise 1: Partition a disk
