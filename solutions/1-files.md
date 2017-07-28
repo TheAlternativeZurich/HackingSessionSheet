@@ -19,24 +19,18 @@ b)
     ^C
 ```
 
-c)
-```
-    ls
-    cat capture.txt
-```
-
-d) 
+c) 
 ```
     wc capture.txt
 ```
 
-e)
+d)
 ```
     cp capture.txt capture-copy.txt
     diff capture.txt capture-copy.txt
 ```
 
-f)
+e)
 ```
     tee -a capture.txt
 ```
@@ -48,7 +42,7 @@ f)
     diff capture.txt capture-copy.txt
 ```
 
-g)
+f)
 ```
     ls -l
     chown root:users capture.txt
@@ -61,7 +55,7 @@ g)
     ls -l
 ```
 
-h)
+g)
 ```
     chmod -w capture-copy.txt
     tee -a capture-copy.txt
@@ -70,51 +64,51 @@ h)
 - Press `^C` (required to close the tee command).
 - Extra exercise: Would it be possible to overcome the write restriction using `sudo`?
 
-i) 
+h) 
 ```
     echo "Hello World!"
 ```
 
-j)
+i)
 ```
     touch -t 201701310001.30 capture.txt
     ls -l
 ```
 
-k) 
+j) 
 ```
     ln capture.txt ~/Desktop/capture-link
 ```
 
-l)
+k)
 ```
     file * ~/Downloads/* ~/Pictures/* ~/Music/*
     file * ~/Downloads/* ~/Pictures/* ~/Music/* > file-types.log
 ```
 
-m) 
+l) 
 ```
     less file-types.log
 ```
 
-n) 
+m) 
 ```
     grep directory file-types.log
 ```
 
-o)
+n)
 ```
     find ~/ -name capture-copy.txt
     find ~/ -name "capture*"
 ```
 
-p)
+o)
 ```
     which ls
     whereis ls
 ```
 
-q)
+p)
 ```
     cd ~/TempDir
 ```

@@ -123,25 +123,24 @@ Syntax:
 
 ---
 
-###Exercise 1:
+###Exercise 1
 
 a) For this set of exercises, create the temporary working directory `TempDir` in your home directory. Now, make it your current working directory.
 b) Create the file `capture.txt` containing some text typed in the keyboard.
     Hint 1: Once you have found the correct command, you can type some words in the keyboard over several lines using `<Enter>`  
     Hint 2: Press `^C` to end the command
-c) Check that the file was created and check the content of the file.
-d) How many lines, words and characters does this file have?
-e) Make a copy of the file and compare both files.
-f) Append text to the copied file and compare with the original.
-g) Assign user `root` and group `users` as new owner of the original file and check the change.
+c) How many lines, words and characters does this file have?
+d) Make a copy of the file and compare both files.
+e) Append text to the copied file and compare with the original.
+f) Assign user `root` and group `users` as new owner of the original file and check the change.
     Hint: check first the current owners of the files
-h) Change the file attributes to make it write protected and try to append text again.
-i) Get in the terminal a new line which contains "Hello World!".
-j) Change the date and time of the file `capture.txt` to 31.01.2017 00:01 and check the result.
-k) Create a link to the `capture.txt` file in the desktop, minimize the terminal and look for the new link on the desktop. Make double-click on the link, does the text editor open the file?
-l) Check the file types in the following directories: your test directory, downloads, pictures and music.  Make a list of all those file types creating the `file-types.log` file.
-m) Explore the log file `file-types.log` with the command `less`.
-n) List all lines which contain a directory in the previous log file.
-o) Starting from your home directory, search for the file `capture.txt`.
-p) Obtain the location of the command `ls`, as well as the location of it's manual.
-q) Delete the content of `TempDir` directory and check it was deleted. Then delete the directory.
+g) Change the file attributes to make it write protected and try to append text again.
+h) Get in the terminal a new line which contains "Hello World!".
+i) Change the date and time of the file `capture.txt` to 31.01.2017 00:01 and check the result.
+j) Create a link to the `capture.txt` file in the desktop, minimize the terminal and look for the new link on the desktop. Make double-click on the link, does the text editor open the file?
+k) Check the file types in the following directories: your test directory, downloads, pictures and music.  Make a list of all those file types creating the `file-types.log` file.
+l) Explore the log file `file-types.log` with the command `less`.
+m) List all lines which contain a directory in the previous log file.
+n) Starting from your home directory, search for the file `capture.txt`.
+o) Obtain the location of the command `ls`, as well as the location of it's manual.
+p) Delete the content of `TempDir` directory and check it was deleted. Then delete the directory.

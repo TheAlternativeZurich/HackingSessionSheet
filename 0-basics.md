@@ -47,30 +47,30 @@ a) Change into the `/usr/bin` directory, then list all files in there.
 b) Change into the `/root` directory.
 c) Change back to your home directory.
 
-### Exercise 4: rm
+### Exercise 4: cat
+
+`cat` stands for con*cat*enate files and print to the standard output.
+
+a) Look at the output of whatever file you desire.
+
+
+### Exercise 5: rm
 
 `rm` stands for "remove". It directly removes files, it doesn't put them in the trash. Any data that you remove with `rm` is gone forever.
 
 a) Create a file `hello` by typing `touch hello`, then delete it.
 
-### Exercise 5: mkdir and rmdir
+### Exercise 6: mkdir and rmdir
 
 `mkdir` stands for "make directory", `rmdir` for "remove directory"
 
 a) Make a directory called `hello` in your home directory, and then remove it.
 b) Can you remove your home directory with rmdir?
 
-### Exercise 6: cp
+### Exercise 7: cp
 
 `cp` stands for "copy".
 
 a) Make a `Backup` directory with `mkdir` and copy your `.bashrc` (bash configuration file) there. Check if it worked with `ls`.
 b) Copy a directory into `Backup/` (e.g. your `Downloads` directory). What is the differece to copying a file?
 c) Remove the `Backup/` directory you just created.
-
-### Exercise 7: cat
-
-`cat` stands for con*cat*enate files and print to the standard output.
-
-a) Look at the output of whatever file you desire.
-
