@@ -15,7 +15,7 @@ Fun fact: `grep`'s name comes from *g*lobally search a *r*egular *e*xpression an
 
 a) Take a look at the file `HackingSessionExercises/grep_exercise.md`. In this exercise, you will search the file for various patterns using `grep`. The goal is that you use `grep` to output *only* what is written in the exercises.
 b) Find the word "contains".
-c) Come up with a pattern such that the output are the three lines `Dog`, `Dig` and `Dug`.
+c) Come up with a pattern such that the output are the three lines `Dog`, `Dig` and `Dug`.  
      Hint: Take a look at the -E or the -P flag for `grep`. You will need one of them here.
 d) Look for all lines beginning with `##`.
 e) Print all lines beginning with `##`, but exclude the ones that starts with `###`.
