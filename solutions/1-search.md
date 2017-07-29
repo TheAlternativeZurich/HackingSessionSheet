@@ -8,9 +8,9 @@ a) Take a look at the file
     cat grep_exercise.md
 ```
 
-b) Find for the word "Further".
+b) Find the word "contains".
 ```
-    grep "Further" grep_exercise.md
+    grep "contains" grep_exercise.md
 ```
 
 c) Come up with a pattern such that the output are the three lines `Dog`, `Dig` and `Dug`.

@@ -13,8 +13,8 @@ I would recommend that you do the exercises on both `grep` and `find` - they are
 
 Fun fact: `grep`'s name comes from *g*lobally search a *r*egular *e*xpression and *p*rint. This is a wordplay on the `ed` command g/re/p, which searches for a Regex and prints it. `ed` is one of the very first text editors created. Nowadays, no one uses `ed` anymore because there is no reason to do so (maybe apart from bragging rights), but `ed` has influenced a *lot* of commands commonly used in Unix.
 
-a) Take a look at the file `HackingSessionExercises/grep_exercise.md`. In these exercises, you will search this file for various patterns using `grep`. The goal is that you use `grep` to output *only* what is written in the exercises.
-b) Find for the word "Further".
+a) Take a look at the file `HackingSessionExercises/grep_exercise.md`. In this exercise, you will search the file for various patterns using `grep`. The goal is that you use `grep` to output *only* what is written in the exercises.
+b) Find the word "contains".
 c) Come up with a pattern such that the output are the three lines `Dog`, `Dig` and `Dug`.
      Hint: Take a look at the -E or the -P flag for `grep`. You will need one of them here.
 d) Look for all lines beginning with `##`.
