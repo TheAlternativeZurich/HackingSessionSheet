@@ -12,7 +12,7 @@ e) Install the package you found in the previous step
 f) Run `youtube-dl` to see if it works. It should display something like "Usage: ..."
 g) Open the man page for `youtube-dl`
 h) Remove `youtube-dl` from your system
-i) Look at the disk usage of your system partition (hint: `df`). Then clean the cache of your package manager. Look at the disk usage again: some space should have been freed.
+i) Look at the disk usage of your system partition (Hint: `df`). Then clean the cache of your package manager. Look at the disk usage again: some space should have been freed.
 
 ### Exercise 2: Ubuntu only: Installing software from PPA
 

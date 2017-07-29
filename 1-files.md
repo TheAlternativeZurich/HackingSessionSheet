@@ -61,7 +61,7 @@ Syntax:
     -t STAMP`  use [[CC]YY]MMDDhhmm[.ss] instead of current time
 ```
 
-Note: a FILE argument that does not exist is created empty (this mode of operation was already used in the section *basics*).
+*Note:* a FILE argument that does not exist is created empty (this mode of operation was already used in the section *basics*).
 
 ###ln
 `ln` - make links between files.
@@ -127,13 +127,13 @@ Syntax:
 
 a) For this set of exercises, create the temporary working directory `TempDir` in your home directory. Now, make it your current working directory.
 b) Create the file `capture.txt` containing some text typed in the keyboard.
-    Hint 1: Once you have found the correct command, you can type some words in the keyboard over several lines using `<Enter>`  
-    Hint 2: Press `^C` to end the command
+    *Hint 1:* Once you have found the correct command, you can type some words in the keyboard over several lines using `<Enter>`  
+    *Hint 2:* Press `^C` to end the command
 c) How many lines, words and characters does this file have?
 d) Make a copy of the file and compare both files.
 e) Append text to the copied file and compare with the original.
 f) Assign user `root` and group `users` as new owner of the original file and check the change.
-    Hint: check first the current owners of the files
+    *Hint:* Check the current owners of the files first
 g) Change the file attributes to make it write protected and try to append text again.
 h) Get in the terminal a new line which contains "Hello World!".
 i) Change the date and time of the file `capture.txt` to 31.01.2017 00:01 and check the result.

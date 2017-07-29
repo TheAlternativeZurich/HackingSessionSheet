@@ -23,6 +23,6 @@ b) Add a new group called `ExerciseGroup`.
 c) Add your new user to the new group.
 d) Remove the user and the group again.
 
-    Hint:
+    *Hint:*
     If you are confused by `gpasswd` and `passwd`, consider the following:
     One of them is used to set the password for a user, the other is used to add a user to a group.

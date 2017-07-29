@@ -13,7 +13,7 @@ a) Run `infiniteLoop.sh &`.
 b) Run `fg`.
 c) For this it's best to press `Ctrl+Z` to suspend the job and then type `bg` that will move it to the background.
 
-Note: running this script as a background job is pretty ugly because it still spams the console. In order to stop this you would need to redirect the output to somewhere else. However redirection is not the topic we are covering in the exercise and the output helps you to see if the program is still running or not.
+*Note:* running this script as a background job is pretty ugly because it still spams the console. In order to stop this you would need to redirect the output to somewhere else. However redirection is not the topic we are covering in the exercise and the output helps you to see if the program is still running or not.
 
 d) The PID can be found it using htop, top works similar but is not recommended. In htop you can see the name of the running processes totally on the right and on the left you can see the PID of that process. Remember the PID.
 e) One way is to use `kill -9 PID`.

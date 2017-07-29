@@ -16,7 +16,7 @@ Fun fact: `grep`'s name comes from *g*lobally search a *r*egular *e*xpression an
 a) Take a look at the file `HackingSessionExercises/grep_exercise.md`. In this exercise, you will search the file for various patterns using `grep`. The goal is that you use `grep` to output *only* what is written in the exercises.
 b) Find the word "contains".
 c) Come up with a pattern such that the output are the three lines `Dog`, `Dig` and `Dug`.  
-     Hint: Take a look at the -E or the -P flag for `grep`. You will need one of them here.
+     *Hint:* Take a look at the -E or the -P flag for `grep`. You will need one of them here.
 d) Look for all lines beginning with `##`.
 e) Print all lines beginning with `##`, but exclude the ones that starts with `###`.
 f) Search for the lines `Cat`, `Rat`, `Sat` and so on, up until `Bat`, but without the line `Latin`.
@@ -28,14 +28,14 @@ k) Investigate for the entire block of Java code (the one at the end of the file
 l) Within that code, output the class that contains the method `out`.
 m) Pry for all animals that consist of exactly two words.
 n) Probe for all animals that begin with `Danger`.
-    Note: Take particular care that "Booplesnoot" and "Trash Panda" aren't part of your output. This makes it more tricky.
+    *Note:* Take particular care that "Booplesnoot" and "Trash Panda" aren't part of your output. This makes it more tricky.
 o) Finally, if you're still motivated: All animals that contain the word `Danger` *or* `danger`.
 
 (Coming up with all these synonyms for "search" at 3am was pretty fun to be honest)
 
 ### Exercise 2: `find`
 
-In this exercise you'll use the `find` command to do some complicated file finding. Note that you can "chain" filters, so for searching for a file that is called "asdf" and has size less than 50MB, you can do `find -name asdf -size -50M`. As usual, there are some more examples at the bottom of the manpage.
+In this exercise you'll use the `find` command to do some complicated file finding. You can "chain" filters, so for searching for a file that is called "asdf" and has size less than 50MB, you can do `find -name asdf -size -50M`. As usual, there are some more examples at the bottom of the manpage.
 
 a) Navigate to your home directory.
 b) Using `find`, search for all files that were created less than 5 days ago.

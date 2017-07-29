@@ -4,7 +4,7 @@
 
 a)
 ```
-    md ~/TempDir
+    mkdir ~/TempDir
     cd ~/TempDir
 ```
 
@@ -48,7 +48,7 @@ f)
     chown root:users capture.txt
 ```
 - You should have received an error message due to lack of permissions.
-- Hint: use `sudo`.
+- *Hint:* use `sudo`.
 
 ```
     sudo chown root:users capture.txt
@@ -116,8 +116,8 @@ p)
 ```
     rm * 
 ```
-- Note 1: If a warning appears asking to confirm removal of write protected files, confirm with `y`.
-- Note 2: Note that even file who's owner was changed to root is also deleted! Ownership doesn't protect the files.
+- *Note 1:* If a warning appears asking to confirm removal of write protected files, confirm with `y`.
+- *Note 2:* Even file a who's owner was changed to root is also deleted! Ownership doesn't protect the files.
 ```
     cd ~
     rmdir TempDir

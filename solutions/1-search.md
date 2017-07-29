@@ -61,7 +61,7 @@ k) Investigate for the entire block of Java code (the one at the end of the file
 ```
     grep -oz "\`\`\`.*\`\`\`" grep_exercise.md
 ```
-    or (note the single quotes):
+    or with single quotes:
 ```
     grep -oz '```.*```' grep_exercise.md
 ```
