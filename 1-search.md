@@ -13,20 +13,25 @@ I would recommend that you do the exercises on both `grep` and `find` - they are
 
 Fun fact: `grep`'s name comes from *g*lobally search a *r*egular *e*xpression and *p*rint. This is a wordplay on the `ed` command g/re/p, which searches for a Regex and prints it. `ed` is one of the very first text editors created. Nowadays, no one uses `ed` anymore because there is no reason to do so (maybe apart from bragging rights), but `ed` has influenced a *lot* of commands commonly used in Unix.
 
-a) Take a look at the file `HackingSessionExercises/grep.md`. In these exercises, you will search this file for various patterns using `grep`. The goal is that you use `grep` to output *only* what is written in the exercises.
-b) Search for the word "Further".
-b) Search in a way such that the output are the three lines `Dog`, `Dig` and `Dug`.
-c) Search such that the output is `Cat`, `Rat`, `Sat` and so on, up until `Bat`.
-d) Search for the same as in the previous exercise, but without the line `Latin`.
-e) Search for the lines `Brat` up until `Bat`.
-f) Search for the lines `Brat` up until `Bat`, but without the line `Latin`.
-g) Search for all lines beginning with `##`.
-h) Search for all lines beginning with `##`, but exclude that start with `###`.
-i) Search for all animals that contain the word `Danger`.
-j) Search for all animals that consist of exactly two words.
-k) Search for the three list elements (those are the lines beginning with `*`).
-l) Search for the entire block of Java code (the one at the end of the file).
-m) Within that code, search for the class that contains the method `out`.
+a) Take a look at the file `HackingSessionExercises/grep_exercise.md`. In these exercises, you will search this file for various patterns using `grep`. The goal is that you use `grep` to output *only* what is written in the exercises.
+b) Find for the word "Further".
+c) Come up with a pattern such that the output are the three lines `Dog`, `Dig` and `Dug`.
+     Hint: Take a look at the -E or the -P flag for `grep`. You will need one of them here.
+d) Look for all lines beginning with `##`.
+e) Print all lines beginning with `##`, but exclude the ones that starts with `###`.
+f) Search for the lines `Cat`, `Rat`, `Sat` and so on, up until `Bat`, but without the line `Latin`.
+g) Produce the same lines as in e), but this time with the line `Latin` included.
+h) Try for the lines `Brat` up until `Bat`, but without the line `Latin`.
+i) Adjust your command so that it lists the lines `Brat` up until `Bat`, this time with `Latin`.
+j) Check for the three list elements (these are the lines beginning with `*`).
+k) Investigate for the entire block of Java code (the one at the end of the file).
+l) Within that code, output the class that contains the method `out`.
+m) Pry for all animals that consist of exactly two words.
+n) Probe for all animals that begin with `Danger`.
+    Note: Take particular care that "Booplesnoot" and "Trash Panda" aren't part of your output. This makes it more tricky.
+o) Finally, if you're still motivated: All animals that contain the word `Danger` *or* `danger`.
+
+(Coming up with all these synonyms for "search" at 3am was pretty fun to be honest)
 
 ### Exercise 2: `find`
 
