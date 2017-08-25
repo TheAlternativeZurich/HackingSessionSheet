@@ -1,4 +1,4 @@
-## Searching
+# Searching
 
 *These exercises cover the `grep` and `find` commands in detail.*  
 
@@ -56,3 +56,5 @@ b) Within that directory, search for all lines of text containing the word "root
 c) If you received a lot of error messages in exercise b), try to limit your search to files which you have read permissions for.
 d) Search for all files containing an IP address.
 e) Output all comments (lines starting with a `#`) of all files with a name ending in `.conf`.
+
+\pagebreak

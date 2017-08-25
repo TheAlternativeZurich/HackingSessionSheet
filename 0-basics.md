@@ -1,4 +1,4 @@
-## Basics
+# Basics
 This aims to train usage in basic commands.
 
 ### Flags
@@ -74,3 +74,5 @@ b) Can you remove your home directory with rmdir?
 a) Make a `Backup` directory with `mkdir` and copy your `.bashrc` (bash configuration file) there. Check if it worked with `ls`.
 b) Copy a directory into `Backup/` (e.g. your `Downloads` directory). What is the differece to copying a file?
 c) Remove the `Backup/` directory you just created.
+
+\pagebreak

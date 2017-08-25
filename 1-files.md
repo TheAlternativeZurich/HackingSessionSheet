@@ -1,4 +1,4 @@
-## Files
+# Files
 
 This section aims to train usage with basic commands for files.  Here you will find a basic use and most common syntax of the commands, as well as some exercises at the end.  However the commands are much more powerful and you are invited to self-explore and experiment with other option attributes and alternative syntaxes (Hint: remember command `man` from the section *basics*).
 
@@ -143,3 +143,5 @@ m) List all lines which contain a directory in the previous log file.
 n) Starting from your home directory, search for the file `capture.txt`.
 o) Obtain the location of the command `ls`, as well as the location of it's manual.
 p) Delete the content of `TempDir` directory and check it was deleted. Then delete the directory.
+
+\pagebreak

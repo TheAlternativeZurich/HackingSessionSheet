@@ -1,4 +1,4 @@
-## Jobs
+# Jobs
 
 ### Exercise 1: fg, bg, &, top, htop, kill, pkill, killall
 
@@ -21,3 +21,5 @@ j) Use the kill command to get rid of the process.
 Do the same as above but this time without using top or htop and use a different method to kill it. You also do not need to do all that background foreground stuff again.
 
 Can you find the parent of the process you started?
+
+\pagebreak

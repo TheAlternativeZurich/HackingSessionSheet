@@ -1,4 +1,4 @@
-## Software management
+# Software management
 
 This exercise is about installing and managing software.
 

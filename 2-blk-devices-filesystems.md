@@ -1,4 +1,4 @@
-## Block devices and file systems
+# Block devices and file systems
 
 This exercise is a bit more advanced! It will involve creating/editing partitions
 from the command line and manipulating block devices and file systems.
@@ -37,3 +37,5 @@ With `dd` you can write images to a disk, like an image of a Linux distribution.
 
 a) Write `image.iso` to `TestDisk` using `dd`.  
     You can check if this worked by looking at the output of `cat TestDisk`.
+
+\pagebreak
