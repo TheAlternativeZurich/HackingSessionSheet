@@ -36,4 +36,4 @@ Especially don't run any of the commands as root.
 With `dd` you can write images to a disk, like an image of a Linux distribution.
 
 a) Write `image.iso` to `TestDisk` using `dd`.  
-    You can check if this worked by looking at the output of `file TestDisk`.
+    You can check if this worked by looking at the output of `cat TestDisk`.
