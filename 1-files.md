@@ -80,8 +80,8 @@ Syntax:
 ```
 
 ###less
-`less` - opposite of more.
-Less is a program similar to `more`, but it has many more features including also file edition possibility. Internal `less` commands are based on both `more` and `vi`.  If no in edition mode, to exit the command press `q`.
+`less` - A file viewer.
+`less` allows to scroll forward and backward in a file with the arrow keys. The current file can be opened in an editor by pressing `v`, and `less` can be quit by pressing `q`.
 
 Syntax:
 ```
@@ -89,8 +89,7 @@ Syntax:
 ```
 
 ###grep
-`grep` - searches the named input FILEs for lines containing a match to the given PATTERN. By default, grep prints the matching lines. 
-
+`grep` - searches the named input FILEs for lines containing a match to the given PATTERN (a regular expression). By default, grep prints the matching lines.
 
 Syntax:
 ```
@@ -98,7 +97,7 @@ Syntax:
 ```
 
 ###find
-`find` - search for files in a directory hierarchy.
+`find` - search for files in a directory hierarchy with a regular expression.
 
 Syntax:
 ```
@@ -106,7 +105,7 @@ Syntax:
 ```
 
 ###which (whereis)
-`which` - locate a command.
+`which` - shows the full path of (shell) commands.
 
 Syntax:
 ```
