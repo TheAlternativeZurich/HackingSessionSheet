@@ -53,7 +53,7 @@ Syntax:
 ```
 
 ###touch
-`touch` - change file timestamps (access and modification times) to the current time or to a specific one defined through the options.
+`touch` - change file timestamps (access and modification times) to the current time or to a specific one defined through the options. Most useful to create new, empty files.
 
 Syntax:
 ```
