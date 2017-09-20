@@ -31,8 +31,6 @@ n) Probe for all animals that begin with `Danger`.
     *Note:* Take particular care that "Booplesnoot" and "Trash Panda" aren't part of your output. This makes it more tricky.
 o) Finally, if you're still motivated: All animals that contain the word `Danger` *or* `danger`.
 
-(Coming up with all these synonyms for "search" at 3am was pretty fun to be honest)
-
 ### Exercise 2: `find`
 
 In this exercise you'll use the `find` command to do some complicated file finding. You can "chain" filters, so for searching for a file that is called "asdf" and has size less than 50MB, you can do `find -name asdf -size -50M`. As usual, there are some more examples at the bottom of the manpage.
