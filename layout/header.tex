@@ -18,5 +18,8 @@
 	breakatwhitespace=true,
 	keywordstyle=\color{blue},
 	}
-\let\lstlistingold\lstlisting
-\renewcommand{\lstlisting}{\lstlistingold[style=customstyle]}
+
+% Redefining these environments took me two hours. If someone knows a good insurance company for RSI, hit me up.
+\let\oldlisting\lstlisting
+\let\endoldlisting\endlstlisting
+\renewenvironment{lstlisting}{\oldlisting[style=customstyle]}{\endoldlisting}
