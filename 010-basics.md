@@ -14,20 +14,18 @@ To run a command, type its name in the console and then press `Enter`. Should yo
 ### man
 
 `man` is a command you will need throughout all of the following exercises. 
-It stands for `manual` and displays information about the specified command. It shows you what the given command can do, which options are available for it, what its input has to be and what will result when it finishes.
+It stands for "manual" and displays information about commands. It shows you what the given command can do, which options are available for it, what its input has to be and what will result when it finishes. Almost all commands provide such a manpage that is typically written by the developers themselves. Manual pages are reliable and the single most important tool to get comfortable using your shell.
 
-Many man pages are absolutely huge and may make you feel quite overwhelmed when you first open them. This is completely normal! The information you need for actually understanding how to run a program/command will in 90% of the cases be described in the first few lines of the page. The bulk of the manual usually describes special options that change how the command is executed, which are also called flags.
+Some man pages are absolutely huge and may make you feel quite overwhelmed when you first open them. This is completely normal! The information you need for actually understanding how to run a program/command will in 90% of the cases be described in the first few lines of the page. The bulk of the manual usually describes special options (flags) that change how the command behaves when executed. Don't worry if you can't remember the details of a command or what its various options do. The most important thing to take away from a manual is a rough idea of *what* a command does: With that, you will know in which situations you can use the command. The details can still be looked up in the manual and you will learn them by heart as time goes by.
 
-Almost all commands and programs provide a man page. They are written and updated by the developers themselves, so should a program be updated to include new options, you will likely find the documentation here.
+Try it yourself! The `man` command itself has its own manpage. Type `man man` to access it, use the arrow keys to scroll, and press Q to exit.
 
-An alternative to using the man pages is to try and see if a command has a help option. This is usually displayed by appending the flag ` --help` after the name of the command (don't forget to put spaces between the name of the command and the option), which will often display much shorter and concise instructions on how to use a command.
+An alternative to using the man pages is to try and see if a command has a help option. This is usually displayed by appending the option ` --help` after the name of the command (don't forget to put spaces between the name of the command and the option), which will often display much shorter and concise instructions on how to use a command. For example, the `man` command also has a `--help` option. Simply type `man --help`, and the command will display information directly in your terminal.
 
-Try it yourself! The `man` command for example has its own manpage. Type `man man` to access it, use the arrow keys to scroll, and press Q to exit.
-It also has a --help option. Simply type `man --help`, and the command will dump the information directly in your terminal.
 
 ### Flags
 
-Flags are options you can add to a command to change the way it is executed. The option `-h` or `--help` describe above is one of them, and is a good example as it causes the command to display information about itself instead of performing its main function. There are many more flags like this, and their name and purpose usually differs between all programs and commands. Single character options are always preceeded by `-`, while those with multiple letters are preceeded by `--`. It is also possible to use multiple different flags together at once, and you can also string them together for quick execution. For example, for the command `ls` described below, you can type `ls -lah` instead of `ls -l -a -h`. And to see what these flags do, consult the man page! 
+Flags are options you can add to a command to change the way it behaves. The option `-h` or `--help` described above is one of them, and is a good example as it causes the command to display information about itself instead of performing its main function. There are many more flags like this, and their name and purpose usually differs between all programs and commands. Single character options are always preceded by `-`, while those with multiple letters are preceded by `--`. It is also possible to use multiple different flags together at once, and you can also string them together for quick execution. For example, for the command `ls` described below, you can type `ls -lah` instead of `ls -l -a -h`. And to see what these flags do, consult the man page by typing `man ls`!
 
 ### Wildcards
 
