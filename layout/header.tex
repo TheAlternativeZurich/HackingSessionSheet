@@ -1,4 +1,5 @@
-%% Header that the buildfile includes into the pandoc standard header. Use this to customize options that aren't already set in the layout.
+% Header that the buildfile includes into the pandoc standard header.
+% Use this to customize options that aren't already set in the layout.
 
 % packages
 \usepackage{color}
@@ -20,6 +21,11 @@
 \rfoot{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
+
+% chapter pages are plain. apply the 'fancy' pagestyle to those aswell to
+% get the same headers on every page.
+\usepackage{etoolbox}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
 
 % set custom layout for chapters. Search for `titlesec package` for
 % the documentation (or open http://mirror.utexas.edu/ctan/macros/latex/contrib/titlesec/titlesec.pdf)
