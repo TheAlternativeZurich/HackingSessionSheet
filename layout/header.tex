@@ -20,3 +20,12 @@
 	}
 \let\lstlistingold\lstlisting
 \renewcommand{\lstlisting}{\lstlistingold[style=customstyle]}
+
+% page header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{TheAlternative}
+\rhead{Hacking Session - \input{git_tag}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
