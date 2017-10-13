@@ -8,6 +8,7 @@
 \usepackage{titlesec}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{etoolbox}
 
 % page layout
 \geometry{top=3cm, left=3cm, right=3cm}
@@ -24,7 +25,6 @@
 
 % chapter pages are plain. apply the 'fancy' pagestyle to those aswell to
 % get the same headers on every page.
-\usepackage{etoolbox}
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
 
 % set custom layout for chapters. Search for `titlesec package` for
