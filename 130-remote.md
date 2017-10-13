@@ -6,7 +6,7 @@ In this section you will learn how to work on a machine to which you have no phy
 
 In this exercise you will learn how to access a compute cluster and do stuff on it and get results. For this please first find the C program called `supercoolNumercialSimulation.c`.  `ssh` and `scp` are the most important commands you will use within this exercise. `ssh` is used to connect to a machine remotely, while `scp` is used to copy files.  For this exercise, it's probably best if you don't lose yourself in trying to understand how `ssh`, resp. `scp` works exactly, because there is quite a bit of cryptography and complicated network stuff involved. To get a general idea of how it works: `ssh` stands for "Secure Shell" and `scp` stands for "Secure Copy". Both make use of the cryptographic library `openSSL` in order to be able to exchange your data securely. If you are interested, you may also use the utility `sftp` for transferring files. If you do this, you need to check online for documentation (or run `man sftp`) since the solution to this exercise shows the `scp` method.
 
-a) Connect to $Supercomputer via ssh.
+a) Connect to pterodactyl.vsos.ethz.ch with the user "hacker" via ssh (the password is "hacker).
 b) Make yourself familiar on the remote machine and make a directory with your name as the directory name.
 c) Return to your local machine.
 d) Copy the C program you found before to your directory on the remote machine.

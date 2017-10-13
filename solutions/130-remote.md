@@ -2,13 +2,13 @@
 
 ### Exercise 1
 
-a) `ssh username@supercomputer`
+a) `ssh hacker@pterodactyl.vsos.ethz.ch`
 b) `mkdir $yourName` (you do not need to type the $ simply use your nethz name)
 c) Hit `Ctrl+D`.
-d) `scp supercoolNumericalSimulation.c username@supercomputer:$yourname/`
+d) `scp supercoolNumericalSimulation.c hacker@pterodactyl.vsos.ethz.ch:$yourname/`
 e) Run the ssh command again, navigate to your directory, and compile with: `gcc supercoolNumericalSimulation.c` this gives you a file called a.out
 f) Running: `./a.out`. In case you get an error saying th file is not executable make it executable with `chmod -x a.out`. Now you should see an output file.
-g) `Ctrl+D`, navigate to your remoteExercise directory, `scp username@supercomputer:$yourName/result.txt .`
+g) `Ctrl+D`, navigate to your remoteExercise directory, `scp hacker@pterodactyl.vsos.ethz.ch:$yourName/result.txt .`
 
 ### Exercise 2
 
