@@ -2,16 +2,6 @@
 
 This section aims to train usage with basic commands for files.  Here you will find a basic use and most common syntax of the commands, as well as some exercises at the end.  However the commands are much more powerful and you are invited to self-explore and experiment with other option attributes and alternative syntaxes (Hint: remember command `man` from the section *basics*).
 
-
-###tee
-`tee` - read from standard input and write to standard output **and** files.
-
-Syntax:
-```
-    tee [OPTION]... [FILE]...
-    -a	--append	append input to the given file(s), do not overwrite.
-```
-
 ###wc
 `wc` stands for "wordcount". It prints newline-, word-, and byte-counts for each file, and a summary line if more than one FILE is specified.
 
@@ -134,7 +124,7 @@ e) Append text to the copied file and compare with the original.
 f) Assign user `root` and group `users` as new owner of the original file and check the change.
     *Hint:* Check the current owners of the files first
 g) Change the file attributes to make it write protected and try to append text again.
-h) Get in the terminal a new line which contains "Hello World!".
+h) Generate a new line in the terminal which contains "Hello World!".
 i) Change the date and time of the file `capture.txt` to 31.01.2017 00:01 and check the result.
 j) Create a link to the `capture.txt` file in the desktop, minimize the terminal and look for the new link on the desktop. Make double-click on the link, does the text editor open the file?
 k) Check the file types in the following directories: your test directory, downloads, pictures and music.  Make a list of all those file types creating the `file-types.log` file.

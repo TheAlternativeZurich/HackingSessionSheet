@@ -14,9 +14,14 @@ b) List all files in your `/bin` directory.
     ls /bin
 ```
 
-c) Find the size of your bash executable (`/usr/bin/bash` or `/bin/bash`).
+c) Find the size of your bash executable (depending on your system, it's `/usr/bin/bash` or `/bin/bash`).
 ```
     ls -la /usr/bin/bash
+```
+
+or
+```
+    ls -la /bin/bash
 ```
 
 
@@ -24,7 +29,7 @@ c) Find the size of your bash executable (`/usr/bin/bash` or `/bin/bash`).
 
 `mv` stands for move.
 
-a) Make a file `hello` using `touch hello`. Now rename this file in `world`.
+a) Make a file `hello` using `touch hello`. Now rename this file to `world`.
 ```
     touch hello
     mv hello world
