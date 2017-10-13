@@ -1,0 +1,22 @@
+% define listings settings
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{%
+	basicstyle=\ttfamily,
+	}
+\lstdefinestyle{customstyle}{%
+	numbers=none,
+	language=bash,
+	showspaces=false,
+	showstringspaces=false,
+	commentstyle=\color{mygreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	keywordstyle=\color{blue},
+	}
+\let\lstlistingold\lstlisting
+\renewcommand{\lstlisting}{\lstlistingold[style=customstyle]}
