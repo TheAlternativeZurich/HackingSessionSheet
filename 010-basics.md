@@ -7,13 +7,9 @@ This aims to train usage of basic commands.
 Here you will find a short explanation of the main concepts to get you started.
 If you're tired of reading or already know most of this from the Toolkit course, then skip down to the Exercises section to test your skills at some practical tasks.
 
-The Linux terminal, also called console, is the standard command line interface we use to enter commands. It is found on every Linux distribution, and is the most versatile tool at your disposal. It lets you use a so-called `shell`, which is in simple terms a program that takes commands written by the user and executes them. Don't worry much about the exact definitions of a shell and a terminal. Differentiating between the two is irrelevant for an every-day user. 
+The Linux terminal, also called console, is the standard command line interface we use to enter commands. It is found on every Linux distribution, and is the most versatile tool at your disposal. It lets you use a so-called `shell`, which is in simple terms a program that takes commands written by the user and executes them. Don't worry much about the exact definitions of a shell and a terminal. Being able to differentiate the two is irrelevant for an every-day user.
 
-To run a command, type its name in the console and then press `Enter`. Note that the shell (by default) is case-sensitive, so capitalization matters.
-
-Commands that are ran by simply typing their name are found as executable files in the folder `/bin/`. Should you want to run a program through the terminal whose executable is not located in this folder, you will have to specify the full path to the file.
-
-Should you ever need to cancel a running command, you can use the keyboard combination `Ctrl+C` to interrupt it.
+To run a command, type its name in the console and then press `Enter`. Should you ever need to cancel a running command, you can use the keyboard combination `Ctrl+C` to interrupt it. Note that the shell (by default) is case-sensitive, so capitalization matters.
 
 ### man
 
