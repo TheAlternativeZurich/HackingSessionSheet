@@ -1,5 +1,7 @@
 # Jobs
 
+This section deals with processes. You will learn how to manage programs in the console. Especially, you will move them to back- and foreground and learn how to force terminate a blocked program.
+
 ### Exercise 1: fg, bg, &, top, htop, kill, pkill, killall
 
 a) Install `htop` if you do not already have it.

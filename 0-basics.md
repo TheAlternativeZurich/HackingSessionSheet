@@ -1,17 +1,31 @@
 # Basics
 This aims to train usage in basic commands.
 
-### Flags
+### Terminals and Commands:
 
-flags are options you can add to a command: for example, if you want to list all files including hidden files, you will use the corresponding flag (that you will find in the manual of the program). Flags start with `-` or `--`. For example, `ls -r` lists all files in reverse order, `ls --reverse` does the same. `ls -rR` (yes, bash is case-sensitive) lists all files in reverse order and recursively and is equivalent to `ls -R -r` and to `ls --reverse --recursive`.
+The Linux terminal is the standard command line interface we use to enter commands. It is found on every Linux distribution, and is the most versatile tool at your disposal. To run a command by, type its name in the console and then press `Enter`. 
+
+Commands that are run like this are stored as executable files in the folder `/bin/`. If you want to run an executable file that is not located in this folder, you will have to specify the full path to the file.
+
+Should you ever need to cancel a running command, you can use the keyboard combination `Ctrl+C` to interrupt it.
 
 ### man
 
-`man` is the command that you will need all along this hacking session. It stands for 'manual' and displays the manual of a command, i.e. what the command does/can do, which options are available or not, what its input and output are etc. The content that `man` displays is also called a manpage.
-Almost all commands (all that we will deal with today) have manpages that are provided together with the program.
-The `man` command has its own manpage! To learn how the `man` command works, you can type `man man`.
-For every command unknown to you, you should take a look at the manpage.
+`man` is a command you will need throughout all of the following exercises. 
+It stands for `manual` and displays information about the specified command. It shows you what the given command can do, which options are available for it, what its input has to be and what will result when it finishes.
 
+Many man pages are absolutely huge and may make you feel quite overwhelmed when you first open them. This is completely normal! The information you need for actually understanding how to run a program/command will in 90 percent of the cases be described in the first few lines of the page. The bulk of the manual usually describes special options that change how the command is executed, which are also called flags.
+
+Almost all commands and programs provide a man page. They are written and updated by the developers themselves, so should a program be updated to include new options, you will likely find documentation here.
+
+An alternative to using the man pages is to try and see if a command has a help option. This is usually displayed by appending the flag ` --help` after the name of the command (don't forget to put spaces between the name of the command and the option), which will often display much shorter and concise instructions on how to use a command.
+
+Try it yourself! The `man` command for example has its own manpage. Type `man man` to access it, use the arrow keys to scroll, and press Q to exit.
+It also has a --help option. Simply type `man --help`, and the command will dump the information directly in your terminal.
+
+### Flags
+
+Flags are options you can add to a command to change the way it is executed. : for example, if you want to list all files including hidden files, you will use the corresponding flag (that you will find in the manual of the program). Flags start with `-` or `--`. For example, `ls -r` lists all files in reverse order, `ls --reverse` does the same. `ls -rR` (yes, bash is case-sensitive) lists all files in reverse order and recursively and is equivalent to `ls -R -r` and to `ls --reverse --recursive`.
 ### Wildcards
 
 Wildcards are a very useful tool. They allow you to apply a command to all files that have a certain structure. There are many different wildcards, the most useful one is `*`. `*` means: any set of characters. So for example `*.jpg` designates all files that end with `.jpg` (`a.jpg`, `abcd.png.jpg` and so on).

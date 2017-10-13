@@ -10,16 +10,12 @@ a)
 
 b)
 ```
-    tee capture.txt
-```
-```txt
-    This is some text.
-    The idea is to test the Linux command.
-    Now it's time to end the file.
-    ^C
+    nano capture.txt
 ```
 
-c) 
+    Press `^O`, then Enter to save in nano and `^X` to quit (where `^` stands for the Control key).
+
+c)
 ```
     wc capture.txt
 ```
@@ -32,13 +28,7 @@ d)
 
 e)
 ```
-    tee -a capture.txt
-```
-```txt
-    some added text into the original file.
-    ^C
-```
-```
+    nano capture.txt
     diff capture.txt capture-copy.txt
 ```
 
@@ -58,13 +48,12 @@ f)
 g)
 ```
     chmod -w capture-copy.txt
-    tee -a capture-copy.txt
+    nano capture-copy.txt
 ```
-- This gives an error message because now the file can't be written to.
-- Press `^C` (required to close the tee command).
+- This gives an error message because now the file can't be written to when attempting to save in nano.
 - Extra exercise: Would it be possible to overcome the write restriction using `sudo`?
 
-h) 
+h)
 ```
     echo "Hello World!"
 ```
@@ -75,7 +64,7 @@ i)
     ls -l
 ```
 
-j) 
+j)
 ```
     ln capture.txt ~/Desktop/capture-link
 ```
@@ -86,35 +75,24 @@ k)
     file * ~/Downloads/* ~/Pictures/* ~/Music/* > file-types.log
 ```
 
-l) 
+l)
 ```
     less file-types.log
 ```
 
-m) 
-```
-    grep directory file-types.log
-```
-
-n)
-```
-    find ~/ -name capture-copy.txt
-    find ~/ -name "capture*"
-```
-
-o)
+m)
 ```
     which ls
     whereis ls
 ```
 
-p)
+n)
 ```
     cd ~/TempDir
 ```
-    __Make sure you're in the correct directory__, then execute: 
+    __Make sure you're in the correct directory__, then execute:
 ```
-    rm * 
+    rm *
 ```
 - *Note 1:* If a warning appears asking to confirm removal of write protected files, confirm with `y`.
 - *Note 2:* Even file a who's owner was changed to root is also deleted! Ownership doesn't protect the files.

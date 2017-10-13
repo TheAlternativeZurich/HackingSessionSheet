@@ -1,5 +1,7 @@
 # System Management
 
+In this section, you will learn how to turn off your computer from the console, how to check the available disk space and how to manage users and groups from the shell. Note that when you use the shell for modifying a user, the system settings panel will reflect these changes and vv.
+
 ### Exercise 1: Power on/off
 
 You can use the shell to do various system management tasks. To shut down, reboot, or put your computer in suspend mode, you can use `reboot`, `poweroff`, or `systemctl suspend` respectively. (You might need to use `sudo` on your system)
@@ -9,7 +11,7 @@ b) Reboot your computer from the command line.
 
 ### Exercise 2: Space Left on Disk
 
-Useful commands: `df`, `dh`
+Useful commands: `df`, `du`
 
 a) Find out what size (in MB) the exercise directory has.
 b) Find out how much space is used by your root directory `/`.
