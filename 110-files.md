@@ -116,4 +116,4 @@ l) Explore the log file `file-types.log` with the command `less`.
 m) Obtain the location of the command `ls`, as well as the location of it's manual.
 n) Delete the content of `TempDir` directory and check it was deleted. Then delete the directory.
 
-\pagebreak
+

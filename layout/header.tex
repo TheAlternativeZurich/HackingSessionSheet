@@ -1,6 +1,11 @@
+%% Header that the buildfile includes into the pandoc standard header. Use this to customize options that aren't already set in the layout.
+
 % packages
 \usepackage{color}
 \usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
 
 % page layout
 \geometry{top=3cm, left=3cm, right=3cm}
@@ -13,6 +18,14 @@
 \cfoot{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
+
+% set custom layout for chapters. Search for `titlesec package` for
+% the documentation (or open http://mirror.utexas.edu/ctan/macros/latex/contrib/titlesec/titlesec.pdf)
+\titleformat{\chapter}[hang]
+  {\sffamily\bfseries\huge}%
+    {\thechapter\ }
+	    {0 pt}%
+	      {}
 
 % Define colors for listings
 \definecolor{mygreen}{rgb}{0,0.6,0}

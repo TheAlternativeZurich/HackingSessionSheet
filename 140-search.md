@@ -55,4 +55,4 @@ c) If you received a lot of error messages in exercise b), try to limit your sea
 d) Search for all files containing an IP address.
 e) Output all comments (lines starting with a `#`) of all files with a name ending in `.conf`.
 
-\pagebreak
+

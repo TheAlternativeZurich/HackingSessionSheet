@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 
-pandoc_flags='--include-in-header=layout/header.tex --template=layout/layout.tex --listings --latex-engine=xelatex'
+# options for pandoc's template file. See the pandoc manual for an explanation of what they do.
+template_vars='--variable=numbersections --variable=secnumdepth:2 --variable=toc'
+
+# Use xelatex for better font support. Use --listings to be able to highlight code sections.
+# Use our own template, in case we want to change something later.
+pandoc_flags="--include-in-header=layout/header.tex --template=layout/layout.tex --listings --top-level-division=chapter --latex-engine=xelatex $template_vars"
 
 # Generate git revision information.
-# Will be included in the document header.
+# The document header includes this tag.
 rev=$(printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)")
 echo "$rev" > git_tag
 

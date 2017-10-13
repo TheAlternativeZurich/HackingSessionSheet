@@ -38,4 +38,4 @@ j) Attach to tmux (if none is running, start it). Note that there might be an ar
 k) Detach from tmux, but not by closing the terminal nor by exiting tmux. Check online for how to do this.
 l) Log out from the remote server.
 
-\pagebreak
+
