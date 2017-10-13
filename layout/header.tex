@@ -5,17 +5,19 @@
 \usepackage{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{titlesec}
-\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
 
 % page layout
 \geometry{top=3cm, left=3cm, right=3cm}
 
 % page header
-\usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{TheAlternative}
+\lhead{\includegraphics[width=0.3\textwidth]{logo.png}}
 \rhead{Hacking Session - \input{git_tag}}
-\cfoot{\thepage}
+\lfoot{\includegraphics[scale=0.7]{cc.png}}
+\cfoot{}
+\rfoot{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
