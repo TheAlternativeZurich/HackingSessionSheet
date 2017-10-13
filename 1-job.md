@@ -4,7 +4,7 @@
 
 a) Install `htop` if you do not already have it.
 b) Navigate to the `jobs` directory.
-c) Run the `HackingSessionExercises/infiniteloop.sh`
+c) Run the `infiniteloop.sh` script.
 d) Now your terminal is pretty unusable.
 e) You can kill the running process by pressing Ctrl+C.
 
