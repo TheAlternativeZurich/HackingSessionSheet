@@ -60,6 +60,7 @@ Syntax to create a link to TARGET with the name LINK_NAME:
 ```
     ln [OPTION]... [-T] TARGET LINK_NAME
 ```
+*Note:* If you use `ln` like this, it will create a so-called 'hardlink'. It is generally advisable to use softlinks (symlinks) instead, because they will also work across file systems. To do so, you will need to pass the `-s` flag like this: `ln -s TARGET LINK_NAME`. Be aware that you will have to use the *absolute* path for `TARGET`.
 
 ###file
 `file` - determine file type.
