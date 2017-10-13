@@ -1,7 +1,8 @@
 # Block devices and file systems
 
 This exercise is a bit more advanced! It will involve creating/editing partitions
-from the command line and manipulating block devices and file systems.
+from the command line and manipulating block devices and file systems. Instead
+of using real disks, we will be working with files that "pretend" to be disks.
 
 WARNING: If any of the following exercises require you to run them as root, you
 should not be doing that!
