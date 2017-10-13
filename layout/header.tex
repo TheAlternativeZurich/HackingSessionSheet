@@ -1,5 +1,9 @@
-% define listings settings
+% packages
 \usepackage{color}
+\usepackage{geometry}
+
+% page layout
+\geometry{top=3cm, left=3cm, right=3cm}
 
 % page header
 \usepackage{fancyhdr}
@@ -15,6 +19,7 @@
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 
+% Define styles for listings
 \lstset{%
 	basicstyle=\ttfamily,
 	}
@@ -27,8 +32,10 @@
 	breaklines=true,
 	breakatwhitespace=true,
 	keywordstyle=\color{blue},
+	morekeywords={wc,mkdir,rm,ln,sudo,su,chown,diff,touch,grep,file,less,which,whereis,ls,mv,cd,cat,cp,clear,chmod,which,},
 	}
 
+% Redefine layouts used by pandoc for listings.
 % Redefining these environments took me two hours. If someone knows a good insurance company for RSI, hit me up.
 \let\oldlisting\lstlisting
 \let\endoldlisting\endlstlisting
