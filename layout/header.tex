@@ -1,6 +1,16 @@
 % define listings settings
 \usepackage{color}
 
+% page header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{TheAlternative}
+\rhead{Hacking Session - \input{git_tag}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Define colors for listings
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
