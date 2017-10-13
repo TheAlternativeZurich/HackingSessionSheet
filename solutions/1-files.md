@@ -18,8 +18,9 @@ b)
     Now it's time to end the file.
     ^C
 ```
+    where `^C` means pressing Control+C
 
-c) 
+c)
 ```
     wc capture.txt
 ```
@@ -64,7 +65,7 @@ g)
 - Press `^C` (required to close the tee command).
 - Extra exercise: Would it be possible to overcome the write restriction using `sudo`?
 
-h) 
+h)
 ```
     echo "Hello World!"
 ```
@@ -75,7 +76,7 @@ i)
     ls -l
 ```
 
-j) 
+j)
 ```
     ln capture.txt ~/Desktop/capture-link
 ```
@@ -86,12 +87,12 @@ k)
     file * ~/Downloads/* ~/Pictures/* ~/Music/* > file-types.log
 ```
 
-l) 
+l)
 ```
     less file-types.log
 ```
 
-m) 
+m)
 ```
     grep directory file-types.log
 ```
@@ -112,9 +113,9 @@ p)
 ```
     cd ~/TempDir
 ```
-    __Make sure you're in the correct directory__, then execute: 
+    __Make sure you're in the correct directory__, then execute:
 ```
-    rm * 
+    rm *
 ```
 - *Note 1:* If a warning appears asking to confirm removal of write protected files, confirm with `y`.
 - *Note 2:* Even file a who's owner was changed to root is also deleted! Ownership doesn't protect the files.

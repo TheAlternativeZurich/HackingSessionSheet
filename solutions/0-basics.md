@@ -19,7 +19,7 @@ c) Find the size of your bash executable (depending on your system, it's `/usr/b
     ls -la /usr/bin/bash
 ```
 
-or
+    or
 ```
     ls -la /bin/bash
 ```
