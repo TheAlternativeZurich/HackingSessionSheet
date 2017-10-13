@@ -1,4 +1,3 @@
--> Welcome text explaining what this is about and how to work. Document will be online.
 -> Search ex. 2 and 3 have no solutions
 -> Remote ex. 1 e) and f) solutions: We cannot assume that all people have done the other exercise too; fill in a correct solution here as well
 -> Searching ex. 1 is not understandable for a normal person, especially the part with the regex
