@@ -3,11 +3,11 @@
 ### Exercise 1
 
 a) `ssh username@supercomputer`
-b) `mkdir $yourName`
+b) `mkdir $yourName` (you do not need to type the $ simply use your nethz name)
 c) Hit `Ctrl+D`.
 d) `scp supercoolNumericalSimulation.c username@supercomputer:$yourname/`
-e) Run the ssh command again, compile it as you already know from other exercises.
-f) Running you should also know how. Now you should see an output file.
+e) Run the ssh command again, navigate to your directory, and compile with: `gcc supercoolNumericalSimulation.c` this gives you a file called a.out
+f) Running: `./a.out`. In case you get an error saying th file is not executable make it executable with `chmod -x a.out`. Now you should see an output file.
 g) `Ctrl+D`, navigate to your remoteExercise directory, `scp username@supercomputer:$yourName/result.txt .`
 
 ### Exercise 2
