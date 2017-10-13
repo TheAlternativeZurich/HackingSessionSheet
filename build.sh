@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 echo -n "exercises..."
-pandoc $(ls [0-9]-*.md) --latex-engine=xelatex -o exercises.pdf
+FLAGS='-H layout/header.tex --template=layout/layout.tex --listings --latex-engine=xelatex'
+pandoc $(ls [0-9]*-*.md) $FLAGS -o exercises.pdf
 echo "ok"
 echo -n "solutions..."
-pandoc $(ls solutions/[0-9]-*.md) --latex-engine=xelatex -o solutions.pdf
+pandoc $(ls solutions/[0-9]*-*.md) $FLAGS -o solutions.pdf
 echo "ok"
