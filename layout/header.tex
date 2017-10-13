@@ -1,14 +1,15 @@
 % packages
 \usepackage{color}
 \usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
 
 % page layout
 \geometry{top=3cm, left=3cm, right=3cm}
 
 % page header
-\usepackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{TheAlternative}
+\lhead{\includegraphics[width=0.3\textwidth]{logo.png}}
 \rhead{Hacking Session - \input{git_tag}}
 \cfoot{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
