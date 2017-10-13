@@ -14,7 +14,7 @@
 % page header
 \pagestyle{fancy}
 \lhead{\includegraphics[width=0.3\textwidth]{logo.png}}
-\rhead{Hacking Session - \input{git_tag}}
+\rhead{\scriptsize Hacking Session - \input{git_tag}\linebreak (version \today)}
 \lfoot{\includegraphics[scale=0.7]{cc.png}}
 \cfoot{}
 \rfoot{\thepage}
@@ -27,7 +27,7 @@
   {\sffamily\bfseries\huge}%
     {\thechapter\ }
 	    {0 pt}%
-	      {}
+	      {\thispagestyle{fancy}}
 
 % Define colors for listings
 \definecolor{mygreen}{rgb}{0,0.6,0}

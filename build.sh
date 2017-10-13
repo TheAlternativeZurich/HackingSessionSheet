@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # options for pandoc's template file. See the pandoc manual for an explanation of what they do.
-template_vars='--variable=numbersections --variable=secnumdepth:2 --variable=toc'
+template_vars='--variable=numbersections --variable=secnumdepth:1 --variable=toc --variable=documentclass:report'
 
 # Use xelatex for better font support. Use --listings to be able to highlight code sections.
 # Use our own template, in case we want to change something later.

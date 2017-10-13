@@ -229,7 +229,10 @@ $if(colorlinks)$
 \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
 $endif$
 \setcounter{tocdepth}{$toc-depth$}
+% set pagestyle to plain for the contents. There may exist a better method, but I don't know of it.
+\pagestyle{plain}
 \tableofcontents
+\pagestyle{fancy}
 }
 $endif$
 $if(lot)$
