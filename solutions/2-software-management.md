@@ -63,12 +63,12 @@ f) Depends on your distro:
 
 a) (no solution)
 b) The desired URL is [https://github.com/AltraMayor/f3.git](https://github.com/AltraMayor/f3.git)
-c)
+c) Execute:
 ```
     cd Downloads
     git clone https://github.com/AltraMayor/f3.git
 ```
-d)
+d) Execute:
 ```
     cd f3
 ```
@@ -109,7 +109,7 @@ f) (no solution)
 g) `/opt/PostgreSQL/YOUR.VERSION/bin/postgres` should complain that it does not know where to find the server configuration file.
 h) `sudo ln /opt/PostgreSQL/YOUR.VERSION/bin/postgres /usr/bin/`
 i) `postgres` should now print the error message about the missing config file.
-j)
+j) Execute:
 ```
     cd /opt/PostgreSQL/YOUR.VERSION
     sudo ./uninstall-postgresql
