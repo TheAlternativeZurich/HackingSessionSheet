@@ -78,22 +78,6 @@ Syntax:
     less [OPTION]... [filename]...
 ```
 
-###grep
-`grep` - searches the named input FILEs for lines containing a match to the given PATTERN (a regular expression). By default, grep prints the matching lines.
-
-Syntax:
-```
-    grep [OPTIONS] PATTERN [FILE...]
-```
-
-###find
-`find` - search for files in a directory hierarchy with a regular expression.
-
-Syntax:
-```
-    find [starting-point...] [expression]
-```
-
 ###which (whereis)
 `which` - shows the full path of (shell) commands.
 
@@ -116,8 +100,7 @@ Syntax:
 
 a) For this set of exercises, create the temporary working directory `TempDir` in your home directory. Now, make it your current working directory.
 b) Create the file `capture.txt` containing some text typed in the keyboard.
-    *Hint 1:* Once you have found the correct command, you can type some words in the keyboard over several lines using `<Enter>`  
-    *Hint 2:* Press `^C` to end the command
+    *Hint:* Use a console text editor such as nano
 c) How many lines, words and characters does this file have?
 d) Make a copy of the file and compare both files.
 e) Append text to the copied file and compare with the original.
@@ -129,9 +112,7 @@ i) Change the date and time of the file `capture.txt` to 31.01.2017 00:01 and ch
 j) Create a link to the `capture.txt` file in the desktop, minimize the terminal and look for the new link on the desktop. Make double-click on the link, does the text editor open the file?
 k) Check the file types in the following directories: your test directory, downloads, pictures and music.  Make a list of all those file types creating the `file-types.log` file.
 l) Explore the log file `file-types.log` with the command `less`.
-m) List all lines which contain a directory in the previous log file.
-n) Starting from your home directory, search for the file `capture.txt`.
-o) Obtain the location of the command `ls`, as well as the location of it's manual.
-p) Delete the content of `TempDir` directory and check it was deleted. Then delete the directory.
+m) Obtain the location of the command `ls`, as well as the location of it's manual.
+n) Delete the content of `TempDir` directory and check it was deleted. Then delete the directory.
 
 \pagebreak
