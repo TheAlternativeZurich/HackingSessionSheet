@@ -5,3 +5,4 @@
 * [ ] Set up a VM/user for ssh exercises
 * [ ] Fill in the random $-variables in the respective files
 * [ ] Add some 'TheAlternative' branding?
+* [ ] Not everybody has the same files, directories on the computer maybe give them a zip with a bunch of files and directories to start with
