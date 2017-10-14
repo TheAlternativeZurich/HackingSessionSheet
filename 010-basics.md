@@ -76,7 +76,7 @@ d) Find the size of your bash executable (`/usr/bin/bash` or `/bin/bash`).
 
 ### Exercise 2: mv
 
-`mv` stands for move.
+`mv` stands for "move".
 
 a) Make a file `hello` using `touch hello`. Now rename this file to `world`.
 b) Move this file into a different directory. (e.g. your `Downloads` folder).
