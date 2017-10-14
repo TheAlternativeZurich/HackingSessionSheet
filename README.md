@@ -8,4 +8,3 @@ In order for the buildscript to include your files into the final pdf, please na
 
 * pandoc
 * xelatex engine
-* IQ >= 100
