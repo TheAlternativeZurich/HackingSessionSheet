@@ -26,7 +26,7 @@ The exercises are generally not meant to be completely solved within the 2 hours
 In addition to this exercise sheet, you will need to download some files for some of the exercises. Those files can be found on our Github repository. Do not worry if you do not know yet what `git` is and how to use it. Simply follow the steps described below:
 
 * Open the terminal on your computer
-* Navigate to the directory you wish to clone the git repo to
+* Navigate to the directory you wish to download the files to
 * Type `git clone https://github.com/TheAlternativeZurich/HackingSession.git`
 
 Now you have all the necessary files and directories and you are ready to start.
