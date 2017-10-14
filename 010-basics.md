@@ -41,9 +41,7 @@ Wildcards are placeholder symbols that are replaced when a command is read by th
 There are three different types of wild cards:
 
 * The star wildcard `*` acts as a placeholder for any number of consecutive symbols. For example, writing `*.jpg` addresses all files that end with `.jpg`. Writing `D*s` addresses all files that start with a `D` and end with a `s`, and so on. 
-
 * The question mark wildcard `?` acts as a placeholder for a single symbol only. For example: `???.png` will address all files that end with `.png` that have 3 letters. 
-
 * The bracket wildcard `[...]` can be used as a placeholder for the symbols we specify inside. [1-9] for example acts as a placeholder for the numbers 1 to 9, and [ABC] acts as a placeholder for those 3 letters only.
 
 ### sudo
