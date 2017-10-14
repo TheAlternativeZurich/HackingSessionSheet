@@ -1,11 +1,13 @@
 # Basics
 
-This aims to train usage of basic commands.
+This section aims to introduce you to, and train the usage of basic concepts and commands.
 
 ## Explanation of Basic Concepts
 
 Here you will find a short explanation of the main concepts to get you started.
-If you're tired of reading or already know most of this from the Toolkit course, then skip down to the Exercises section to test your skills at some practical tasks.
+If you're tired of reading or already know most of this from the Toolkit course, then skip down to the `Exercises` section to test your skills at some practical tasks.
+
+### Terminal and Commands
 
 The Linux terminal, also called console, is the standard command line interface we use to enter commands. It is found on every Linux distribution, and is the most versatile tool at your disposal. It lets you use a so-called `shell`, which is in simple terms a program that takes commands written by the user and executes them. Don't worry much about the exact definitions of a shell and a terminal. Being able to differentiate the two is irrelevant for an every-day user.
 
@@ -14,9 +16,14 @@ To run a command, type its name in the console and then press `Enter`. Should yo
 ### man
 
 `man` is a command you will need throughout all of the following exercises. 
-It stands for "manual" and displays information about commands. It shows you what the given command can do, which options are available for it, what its input has to be and what will result when it finishes. Almost all commands provide such a manpage that is typically written by the developers themselves. Manual pages are reliable and the single most important tool to get comfortable using your shell.
+It stands for "manual" and shows you what almost any given command can do and which options are available for it. 
+Almost all commands provide such a "manpage", which is typically written by the developers themselves. They are hence reliable and the single most important tool to get comfortable with using your shell.
 
-Some man pages are absolutely huge and may make you feel quite overwhelmed when you first open them. This is completely normal! The information you need for actually understanding how to run a program/command will in 90% of the cases be described in the first few lines of the page. The bulk of the manual usually describes special options (flags) that change how the command behaves when executed. Don't worry if you can't remember the details of a command or what its various options do. The most important thing to take away from a manual is a rough idea of *what* a command does: With that, you will know in which situations you can use the command. The details can still be looked up in the manual and you will learn them by heart as time goes by.
+Some man pages are absolutely huge and may make you feel quite overwhelmed when you first open them. This is completely normal!
+ The information you need for actually understanding how to run a program/command will in 90% of the cases be described in the first few lines of the page. 
+The bulk of the manual usually describes special options (flags) that change how the command behaves when executed. 
+Don't worry if you can't remember the details of a command or what its various options do. 
+The most important thing to take away from a manual is a rough idea of *what* a command does: With that, you will know in which situations you can use it. The details can still be looked up in the manual and you will learn them by heart as time goes by.
 
 Try it yourself! The `man` command itself has its own manpage. Type `man man` to access it, use the arrow keys to scroll, and press Q to exit.
 
@@ -30,28 +37,31 @@ Flags are options you can add to a command to change the way it behaves. The opt
 ### Wildcards
 
 Wildcards are placeholder symbols that are replaced when a command is read by the shell.
-There are three different types of wild cards:
-* The star wildcard `*` acts as a placeholder for any number of consecutive symbols. For example, writing `*.jpg` designates all files that end with the string `.jpg` (like `flower.jpg`, `asdfghjkl.jpg` or even `.jpeg`). Writing `S*.wav` addresses all files that start with a capital `S` and end with `.wav`, including `S.wav`, and so on. 
-* The question mark wildcard `?` acts as a placeholder for a single symbol only. It is otherwise the same as the above wildcard.
 
-* The bracket wildcard `[]` can be used as a placeholder for the specified symbols. [1-9] for example acts as a placeholder for the numbers 1-9 in a filename, and [ABC] as a placeholder for A, B or C.
+There are three different types of wild cards:
+
+* The star wildcard `*` acts as a placeholder for any number of consecutive symbols. For example, writing `*.jpg` addresses all files that end with `.jpg`. Writing `D*s` addresses all files that start with a `D` and end with a `s`, and so on. 
+
+* The question mark wildcard `?` acts as a placeholder for a single symbol only. For example: `???.png` will address all files that end with `.png` that have 3 letters. 
+
+* The bracket wildcard `[...]` can be used as a placeholder for the symbols we specify inside. [1-9] for example acts as a placeholder for the numbers 1 to 9, and [ABC] acts as a placeholder for those 3 letters only.
 
 ### sudo
 
 Similar to Windows or MacOS, in Linux we differ between user accounts that have different access permissions. Users usually do not have permission to simply install new packages or alter files outside of their home directory. The exception to this is root, who has permission to alter whatever he wants, install whatever he wants, and destroy whatever he wants. 
 
-In order for a user to run single commands and programs as root, we make use the command `sudo`, which stands for `super user do`. 
+In order for a user to run single commands and programs as root, we make use the command `sudo`. 
 Example: `sudo echo "Hello World"`
 
-If the user who executes the command is in the sudoers group (grants permission to use `sudo`), the shell then asks the user for his password. Once it is entered, the command will run just as it normally would -- only that now, it is being ran by root instead of the user account. If you don't want to enter your password every time you want to use sudo, you can use the command `sudo su` to become root inside the current shell. Type `exit` if you want to return to the user account.
+If the user who executes the command is in the sudoers group (grants permission to use `sudo`), the shell then asks the user for his password. Once it is entered, the command will run just as it normally would -- only that now, it is being ran by root instead of the user account. If you don't want to enter your password every time you need to use sudo, you can use the command `sudo su` to become root inside the current shell. This will allow you to run all commands with no confirmation needed (We strongly advise against doing this however!). Type `exit` if you want to return to the user account.
 
-Note that most commands that require you to use `sudo` usually have the potential to cause serious damage to your system. Upon first entering `sudo`, you will be met with the quote `With great power comes great responsibility`. Take this to heart, as many commands that require sudo will not ask twice if you run them while you are root.
+Note that most commands that require you to use `sudo` usually have a good reason to do so, as they may have the potential to cause serious damage to your system. Upon first entering `sudo`, you will be met with the quote `With great power comes great responsibility.`. Take this to heart, as the majority of commands on Linux will not ask twice, even when you're about to do something foolish.
 
 ## Exercises
 
 Here you will get to try things yourself!
-We don't give you any step-by-step instructions here. You will have to find things out yourself! (or ask our helpers should you get stuck)
-Try to solve the exercises in order, as they may build up on each other.
+
+We don't give you any step-by-step instructions however. You will have to find things out yourself! (or ask our helpers should you get stuck)
 
 ### Exercise 0: man
 
@@ -113,6 +123,6 @@ c) Remove the `Backup/` directory you just created.
 
 `clear` stands for “clear the terminal”
 
-a) After you worked through the last few exercises, clear the terminal
+a) After you worked through the previous exercises, clear the terminal
 
 

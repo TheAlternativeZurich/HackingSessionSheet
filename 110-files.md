@@ -1,6 +1,6 @@
 # Files
 
-This section aims to train usage with basic commands for files.  Here you will find a basic use and most common syntax of the commands, as well as some exercises at the end.  However the commands are much more powerful and you are invited to self-explore and experiment with other option attributes and alternative syntaxes (Hint: remember command `man` from the section *basics*).
+This section introduces you to basic commands related to files. 
 
 ###wc
 `wc` stands for "wordcount". It prints newline-, word-, and byte-counts for each file, and a summary line if more than one FILE is specified.
@@ -19,7 +19,7 @@ Syntax:
 ```
 
 ###chown
-`chown` stands for "change owner". It can change also group owner.
+`chown` stands for "change owner". It can also change group owner.
 
 Syntax:
 ```
@@ -27,7 +27,15 @@ Syntax:
 ```
 
 ###chmod
-`chmod` stands for "change file mode bits" and controls the permissions: who can read and write a given file? Is it an executable? Permissions can be read using `ls -l`.
+`chmod` stands for "change file mode bits" and controls the following permissions on any given file:
+
+* Read: Who can see the file data.
+
+* Write: Who can modify the file.
+
+* Execute: Who is allowed to run the file (like a program or a script)
+ 
+Permissions can be read using `ls -l`.
 
 Syntax:
 ```
@@ -35,7 +43,7 @@ Syntax:
 ```
 
 ###echo
-`echo` - display a line of text
+`echo` - output the given line of text (useful for displaying the content of variables)
 
 Syntax:
 ```
@@ -43,7 +51,8 @@ Syntax:
 ```
 
 ###touch
-`touch` - change file timestamps (access and modification times) to the current time or to a specific one defined through the options. Most useful to create new, empty files.
+`touch` - change file timestamps (access and modification times) to the current time or to a specific one defined through the options. 
+Most useful to create new, empty files.
 
 Syntax:
 ```
@@ -56,7 +65,7 @@ Syntax:
 ###ln
 `ln` - make links between files.
 
-Syntax to create a link to TARGET with the name LINK_NAME:
+Syntax to create a link to `TARGET` with the name `LINK_NAME`:
 ```
     ln [OPTION]... [-T] TARGET LINK_NAME
 ```

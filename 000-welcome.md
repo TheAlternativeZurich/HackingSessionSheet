@@ -1,36 +1,34 @@
 # Welcome
+Welcome to the Hacking Session! This workshop is designed as an exercise to go with the Toolkit course. If you did not attend said course, we suggest you have a look at its slides, which can be found on our website. However, you can of course also solve them independently. 
+Please make sure to read this page carefully before starting.
 
-Welcome to the LinuxDays Hacking Session. This session is designed as an exercise session to go with the Toolkit course. If you did not attend the toolkit course, you might want to first have a look at the slides of that course. Please read this page carefully.
+## A Word About Organisation
 
-## A word about organistaion
+__Exclusion of liability__
 
-### Exclusion of liability
+By taking part in this exercise, you acknowledge that you alone are responsible for your computer. 
+TheAlternative and its parent organisation, the Student Sustainability Commission, will not be held liable for any damages or loss of data.
 
-By doing this exercise you acknowledge that you alone are responsible for your computer and data. TheAlternative and its parent organisation, Student Sustainability Comission, will not be held liable for any damage or loss of data.
+__Ask__
 
-### Ask
+If anything is unclear in the exercises feel free to raise your hand and one of our staff members will come and help you. 
 
-If anything is unclear in the exercises feel free to raise your hand and a helper will come to you. (*Hint:* this might not work if you are doing the exercise at home.)
+__Search__
 
-### Google
+The exercises are designed in such a way that you have to find things out by yourself.
+There are various ways you can go about this; reading the manual with the `man` command is one way, doing a quick web search is another.
 
-The exercises are designed in a way that you have to find out things by yourself. There are various ways you can go about that. Reading the manual with the `man` command is one way, doing a quick web search another.
+__Difficulty__
 
-### Difficulty
+The exercises are generally not meant to be completely solved within the 2 hours given to you in the session. We tried to present a wide range of different topics with varying degrees of difficulty. Feel free to skip some exercises if they're not challenging enough, or if you get stuck at something.
 
-The exercises are not meant to be all solved within 2 hours by a complete beginner. There are exercises with varying degrees of difficulty. Do not worry if something is too difficult for you at the moment or if you spend a lot of time on something. Feel free to skip some exercises.
-
-On the other hand, if you are already somewhat experienced with the command line feel free to skip the exercises are already familiar with.
-
-
-## Getting what you need
-
-Additional to this exercise sheet there are files you will need for various exercises. Those files can be found on a Github repository. Do not worry if you do not know yet what `git` is and how to use it. Simply follow the steps described below:
+## Getting What You Need
+In addition to this exercise sheet, you will need to download some files for some of the exercises. Those files can be found on our Github repository. Do not worry if you do not know yet what `git` is and how to use it. Simply follow the steps described below:
 
 * Open the terminal on your computer
-* *Optional: navigate to the directory you wish to clone the git repo to*
+* Navigate to the directory you wish to clone the git repo to
 * Type `git clone https://github.com/TheAlternativeZurich/HackingSession.git`
 
-Now you have all the necessary files and directories and are ready to start.
+Now you have all the necessary files and directories and you are ready to start.
 
 Have fun!
