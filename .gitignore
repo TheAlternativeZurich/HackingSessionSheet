@@ -6,3 +6,4 @@
 *.out
 *~
 git_tag
+*AUTOGEN.tex
