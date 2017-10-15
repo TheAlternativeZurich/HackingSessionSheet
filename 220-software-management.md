@@ -36,7 +36,7 @@ i) Attempt to install `handbrake-gtk`. There should be no such package.
 
 ### Exercise 3: Installing a package manually
 
-Event if there is no package available in the software source and there is no PPA available, there might be a package available online that you can download manually and install. This means that you download the package file using your browser or the `wget` command and then tell your package manager to install it. This way, the package can be removed **but not upgraded automatically** by your package manager.
+Even if there is no package available in the software source and there is no PPA available, there might be a package available online that you can download manually and install. This means that you download the package file using your browser or the `wget` command and then tell your package manager to install it. This way, the package can be removed **but not upgraded automatically** by your package manager.
 
 **Note:** In this method you need to trust the developer since the package manager only verifies the integrity of the package, not the security.
 

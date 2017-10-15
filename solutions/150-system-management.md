@@ -7,7 +7,13 @@ a) Try to put your computer into suspend, and wake it back up.
     systemctl suspend
 ```
 
-b) Reboot your computer from the command line.
+b)
+```
+    shutdown 10
+    shutdown -c
+```
+
+c) Reboot your computer from the command line.
 ```
     reboot
 ```

@@ -17,7 +17,7 @@ To run a command, type its name in the console and then press `Enter`. Should yo
 
 `man` is a command you will need throughout all of the following exercises. 
 It stands for "manual" and shows you what almost any given command can do and which options are available for it. 
-Almost all commands provide such a "manpage", which is typically written by the developers themselves. They are hence reliable and the single most important tool to get comfortable with using your shell.
+Almost all commands provide such a "manpage", which is typically written by the developers themselves. They are hence reliable, and are the single most important tool to get comfortable with using your shell.
 
 Some man pages are absolutely huge and may make you feel quite overwhelmed when you first open them. This is completely normal!
  The information you need for actually understanding how to run a program/command will in 90% of the cases be described in the first few lines of the page. 
@@ -32,7 +32,7 @@ An alternative to using the man pages is to try and see if a command has a help 
 
 ### Flags
 
-Flags are options you can add to a command to change the way it behaves. The option `-h` or `--help` described above is one of them, and is a good example as it causes the command to display information about itself instead of performing its main function. There are many more flags like this, and their name and purpose usually differs between all programs and commands. Single character options are always preceded by `-`, while those with multiple letters are preceded by `--`. It is also possible to use multiple different flags together at once, and you can also string them together for quick execution. For example, for the command `ls` described below, you can type `ls -lah` instead of `ls -l -a -h`. And to see what these flags do, consult the man page by typing `man ls`!
+Flags are options you can add to a command to change the way it behaves. The option `-h` or `--help` described above is one of them, and is a good example as it causes the command to display information about itself instead of performing its main function. There are many more flags like this, and their name and purpose usually differs between all programs and commands. Single character options are always preceded by `-`, while those with multiple letters are preceded by `--`. It is also possible to use multiple different flags together at once, and you can also string them together for quick execution. For example, for the command `ls` described below, you can type `ls -lah` instead of `ls -l -a -h`. (to see what these flags do, consult the man page by typing `man ls`!)
 
 ### Wildcards
 
@@ -40,9 +40,13 @@ Wildcards are placeholder symbols that are replaced when a command is read by th
 
 There are three different types of wild cards:
 
-* The star wildcard `*` acts as a placeholder for any number of consecutive symbols. For example, writing `*.jpg` addresses all files that end with `.jpg`. Writing `D*s` addresses all files that start with a `D` and end with a `s`, and so on. 
+* The star wildcard `*` acts as a placeholder for any number of consecutive symbols. For example, writing `*.jpg` addresses all files and folders that end with `.jpg`. Writing `D*s` addresses all files and folders that start with a `D` and end with a `s`, and so on. 
+
 * The question mark wildcard `?` acts as a placeholder for a single symbol only. For example: `???.png` will address all files that end with `.png` that have 3 letters. 
+
 * The bracket wildcard `[...]` can be used as a placeholder for the symbols we specify inside. [1-9] for example acts as a placeholder for the numbers 1 to 9, and [ABC] acts as a placeholder for those 3 letters only.
+
+Furthermore, there is also a concept called "Regular Expressions" which fulfills a similar purpose. We will not elaborate on this here however.
 
 ### sudo
 
@@ -51,7 +55,7 @@ Similar to Windows or MacOS, in Linux we differ between user accounts that have 
 In order for a user to run single commands and programs as root, we make use the command `sudo`. 
 Example: `sudo echo "Hello World"`
 
-If the user who executes the command is in the sudoers group (grants permission to use `sudo`), the shell then asks the user for his password. Once it is entered, the command will run just as it normally would -- only that now, it is being ran by root instead of the user account. If you don't want to enter your password every time you need to use sudo, you can use the command `sudo su` to become root inside the current shell. This will allow you to run all commands with no confirmation needed (We strongly advise against doing this however!). Type `exit` if you want to return to the user account.
+If the user who executes the command is in the sudoers group (grants permission to use `sudo`), the shell then asks the user for his password. Once it is entered, the command will run just as it normally would -- only that now, it is being ran by root instead of the user account. If you don't want to enter your password every time you need to use sudo, you can use the command `sudo su` to become root inside the current shell. This will allow you to run all commands with no confirmation needed (We strongly advise against doing this for now however!). Type `exit` if you want to return to the user account.
 
 Note that most commands that require you to use `sudo` usually have a good reason to do so, as they may have the potential to cause serious damage to your system. Upon first entering `sudo`, you will be met with the quote `With great power comes great responsibility.`. Take this to heart, as the majority of commands on Linux will not ask twice, even when you're about to do something foolish.
 
@@ -71,7 +75,7 @@ If you haven't done so before, you should definitely make yourself familiar with
 
 a) List all files (including hidden files) in your current directory.
 b) List all files in your `/bin` directory.
-c) List all files in your `/bin` directory whose names consist of two letters
+c) List all files in your `/bin` directory whose names consist of only two letters.
 d) Find the size of your bash executable (`/usr/bin/bash` or `/bin/bash`).
 
 ### Exercise 2: mv
@@ -85,7 +89,7 @@ b) Move this file into a different directory. (e.g. your `Downloads` folder).
 
 `cd` stands for "change directory".
 
-a) From your home directory, change to `./Documents`. Then move back to the `home` directory.
+a) From your home directory, change to `./Documents`. Then change back to the `home` directory.
 b) Change into the `/root` directory
 c) Change back to your home directory without writing out the full path.
 
@@ -94,6 +98,8 @@ c) Change back to your home directory without writing out the full path.
 `cat` stands for "con*cat*enate files and print to the standard output".
 
 a) Look at the output of whatever file you desire.
+b) Move the contents of one file into another, overwriting it. 
+(Hint: Look up the redirection operator)
 
 ### Exercise 5: mkdir and rmdir
 
@@ -106,8 +112,8 @@ b) Can you remove your home directory with rmdir?
 
 `rm` stands for "remove". It directly removes files, it doesn't put them in the trash. Any data that you remove with `rm` is gone forever.
 
-a) Create a file called `world` by typing `touch world`, then delete it.
-b) Create a directory called `foo`, then create 3 files with names of your choice inside this directory. Remove them all at once.
+a) Create a file called `world`, then delete it.
+b) Create a directory called `foo`. Change to this directory, then create 3 files with names of your choice inside this directory. Remove them all at once.
 
 ### Exercise 7: cp
 

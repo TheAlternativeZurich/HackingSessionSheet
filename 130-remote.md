@@ -1,6 +1,6 @@
 # Remote
 
-In this section you will learn how to work on a machine to which you have no phyiscal access (i.e. you cannot connect a keyboard, mouse or screen). Examples for such machines: routers, Raspberry Pi, a computer that is 200km away, ETH's supercomputers et cetera... In particular, you will find out how to securely connect to those machines, run commands on them, how to copy files back and forth and see how many users are logged in.
+In this section you will learn how to work on a machine which you have no physical access to (i.e. you cannot connect a keyboard, mouse or screen). Examples for such machines are: routers, Raspberry Pis, a computer that is 200km away, ETH's supercomputers et cetera... In particular, you will find out how to securely connect to those machines, run commands on them, how to copy files back and forth and see how many users are logged in.
 
 ### Exercise 1: ssh, scp
 
@@ -18,9 +18,9 @@ g) Find its output and copy it to your `remoteExercise` directory on your local 
 
 This exercise is about using the terminal multiplexer `tmux`. Using it gives you several advantages, here are a few:
 
-- If the connection gets lost, running processes on the remote machine keeps running.
+- If the connection gets lost, running processes on the remote machine will keep working independently.
 - You can turn off your local computer without interrupting the remote calculation. You may re-connect to the remote tmux session any time to check how your calculations are doing.
-- Tmux allows you to tile your terminals and have several terminals open through the same ssh connection.
+- tmux allows you to tile your terminals and have several terminals open through the same ssh connection.
 - You may collaborate with someone else and you both see the same content.
 
 Consider looking up tmux keyboard shortcuts online.

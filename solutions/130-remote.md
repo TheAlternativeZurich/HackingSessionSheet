@@ -19,7 +19,7 @@ d) `tmux a` to attach to tmux (note that there is no `-` before the `a`).
 e) (no solution)
 f) Typically, `Alt+F4` or click the close button on the windows of the terminals. To attach, do again `tmux a`.
 g) Repeatedly type `exit` or press `Ctrl+D`.
-h) *__TODO!__*
+h) `ssh hacker@pterodactyl.vsos.ethz.ch`
 i) Simply type `w`.
 j) `tmux a` to attach (if it says "no sessions", type `tmux`).
 k) `Ctrl+B`, `d`

@@ -52,7 +52,7 @@ Syntax:
 
 ###touch
 `touch` - change file timestamps (access and modification times) to the current time or to a specific one defined through the options. 
-Most useful to create new, empty files.
+Most useful for creating new, empty files.
 
 Syntax:
 ```
@@ -109,7 +109,7 @@ Syntax:
 ###Exercise 1
 
 a) For this set of exercises, create the temporary working directory `TempDir` in your home directory. Now, make it your current working directory.
-b) Create the file `capture.txt` containing some text typed in the keyboard.
+b) Create the file `capture.txt` containing some text typed through your keyboard.
     *Hint:* Use a console text editor such as nano
 c) How many lines, words and characters does this file have?
 d) Make a copy of the file and compare both files.
@@ -119,7 +119,7 @@ f) Assign user `root` and group `users` as new owner of the original file and ch
 g) Change the file attributes to make it write protected and try to append text again.
 h) Generate a new line in the terminal which contains "Hello World!".
 i) Change the date and time of the file `capture.txt` to 31.01.2017 00:01 and check the result.
-j) Create a link to the `capture.txt` file in the desktop, minimize the terminal and look for the new link on the desktop. Make double-click on the link, does the text editor open the file?
+j) Create a link to the `capture.txt` file in the desktop, minimize the terminal and look for the new link on the desktop. Can the text editor open the file?
 k) Check the file types in the following directories: your test directory, downloads, pictures and music.  Make a list of all those file types creating the `file-types.log` file.
 l) Explore the log file `file-types.log` with the command `less`.
 m) Obtain the location of the command `ls`, as well as the location of it's manual.

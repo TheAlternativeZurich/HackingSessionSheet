@@ -4,10 +4,11 @@ In this section, you will learn how to turn off your computer from the console, 
 
 ### Exercise 1: Power on/off
 
-You can use the shell to do various system management tasks. To shut down, reboot, or put your computer in suspend mode, you can use `reboot`, `poweroff`, or `systemctl suspend` respectively. (You might need to use `sudo` on your system)
+You can use the shell to do various system management tasks from the command line. For example, you can use the command "poweroff" to shut down your computer immediately. This exercise explores some more examples: (you might need to use `sudo`)
 
-a) Try to put your computer into suspend, and wake it back up.
-b) Reboot your computer from the command line.
+a) Using your terminal, try to put your computer into suspend, and wake it back up. (*Hint:* Use the command `systemctl`)
+b) Schedule your laptop to shut down in 10 minutes. Then cancel it.
+c) Reboot your computer from the command line.
 
 ### Exercise 2: Space Left on Disk
 
