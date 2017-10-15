@@ -1,6 +1,6 @@
 # System Management
 
-In this section, you will learn how to turn off your computer from the console, how to check the available disk space and how to manage users and groups from the shell. Note that when you use the shell for modifying a user, the system settings panel will reflect these changes and vv.
+In this section, you will learn how to turn off your computer from the console, how to check the available disk space and how to manage users and groups from the shell. Note that when you use the shell for modifying a user, the system settings panel will also reflect these changes.
 
 ### Exercise 1: Power on/off
 
