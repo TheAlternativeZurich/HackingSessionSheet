@@ -1,4 +1,4 @@
-## System management
+# System management
 
 ### Exercise 1: Power on/off
 

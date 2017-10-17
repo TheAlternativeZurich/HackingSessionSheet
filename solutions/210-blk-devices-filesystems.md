@@ -1,4 +1,4 @@
-## Block devices and file systems
+# Block devices and file systems
 
 ### Exercise 1: Partition a disk
 

@@ -1,4 +1,4 @@
-## Basics
+# Basics
 
 ### Exercise 1: ls
 

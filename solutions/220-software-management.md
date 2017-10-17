@@ -1,4 +1,4 @@
-## Software management
+# Software management
 
 ### Exercise 1: Package manager
 
