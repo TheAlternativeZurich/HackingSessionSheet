@@ -1,4 +1,4 @@
-## Searching
+# Searching
 
 ### Exercise 1: `grep`
 
@@ -92,4 +92,79 @@ n) Probe for all animals that begin with `Danger`.
 o) Finally, if you're still motivated: All animals that contain the word `Danger` *or* `danger`.
 ```
     grep -Eo "([A-Z]\w*|D)anger\w* ?([A-Z]\w*[- ]?)*" grep_exercise.md
+```
+
+### Exercise 2
+a) Navigate to your home directory.
+```
+    cd
+```
+
+b) Using `find`, search for all files that were created less than 5 days ago.
+```
+    find -atime 5
+```
+
+c) Using `find`, search for all the files that you have write access for.
+```
+    find -writable
+```
+
+d) Search for all files that start with the letter `d`.
+```
+    find -name "d*"
+```
+
+e) Search for all files smaller than 1MB, but larger than 10KB.
+```
+    find -size +10k -size -1M
+```
+
+f) Find all files in the directory `Desktop` (or some different directory).
+```
+    find Desktop/
+```
+
+g) Search for all files starting with the letter `d` and execute `cat` on them.
+```
+    find -name "d*" -exec cat {} \;
+```
+
+
+### Exercise 3
+
+Combining the knowledge of `grep` and `find`, we can search for some incredibly specific stuff! 
+Look at the `exec` flag in the manual for `find`.
+
+a) Navigate to your etc directory (`/etc`, on most distributions).
+```
+    cd /etc
+```
+
+b) Within that directory, search for all lines of text containing the word "root".
+```
+    find -exec grep "root" {} \;
+```
+    or
+```
+    grep -R "root"
+```
+
+c) If you received a lot of error messages in exercise b), try to limit your search to files which you have read permissions for.
+```
+    find -readable -type f -exec grep "root" {} \;
+```
+
+d) Search for all files containing an IPv4 address.
+```
+    find -exec grep "\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}[^.]" {} \;
+```
+    or
+```
+    grep -PRl "\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}[^.]"
+```
+
+e) Output all comments (lines starting with a `#`) of all files with a name ending in `.conf`.
+```
+    find -name "*.conf" -exec grep "^#" {} \;
 ```
