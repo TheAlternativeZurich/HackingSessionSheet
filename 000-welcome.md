@@ -13,14 +13,9 @@ __Ask__
 
 If anything is unclear in the exercises feel free to raise your hand and one of our staff members will come and help you. 
 
-__Search__
-
-The exercises are designed in such a way that you have to find things out by yourself.
-There are various ways you can go about this; reading the manual with the `man` command is one way, doing a quick web search is another.
-
 __Difficulty__
 
-The exercises are generally not meant to be completely solved within the 2 hours given to you in the session. We tried to present a wide range of different topics with varying degrees of difficulty. Feel free to skip some exercises if they're not challenging enough, or if you get stuck at something.
+The exercises are designed to be solved through self-initiative. For most exercises there are no step-by-step guides, but we will give you hints that point you in the right direction. In addition, the usage of manual pages and search engines is actively encouraged.  The exercises are generally not meant to be completely solved within the 2 hours given to you in the session, as we tried to present a wide range of different topics with varying degrees of difficulty. Feel free to skip some exercises if they're not challenging or interesting enough to you, or if you get stuck at something.
 
 ## Getting What You Need
 In addition to this exercise sheet, you will need to download some files for some of the exercises. Those files can be found on our Github repository. Do not worry if you do not know yet what `git` is and how to use it. Simply follow the steps described below:
