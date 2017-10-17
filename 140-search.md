@@ -36,7 +36,7 @@ o) Finally, if you're still motivated: All animals that contain the word `Danger
 In this exercise you'll use the `find` command to do some complicated file finding. You can "chain" filters, so for searching for a file that is called "asdf" and has size less than 50MB, you can do `find -name asdf -size -50M`. As usual, there are some more examples at the bottom of the manpage.
 
 a) Navigate to your home directory.
-b) Using `find`, search for all files that were created less than 5 days ago.
+b) Using `find`, search for all files that were modified less than 5 days ago.
 c) Using `find`, search for all the files that you have write access for.
 d) Search for all files that start with the letter `d`.
 e) Search for all files smaller than 1MB, but larger than 10KB.
@@ -52,7 +52,7 @@ Look at the `exec` flag in the manual for `find`.
 a) Navigate to your etc directory (`/etc`, on most distributions).
 b) Within that directory, search for all lines of text containing the word "root".
 c) If you received a lot of error messages in exercise b), try to limit your search to files which you have read permissions for.
-d) Search for all files containing an IP address.
+d) Search for all files containing an IPv4 address. (Ignore the fact that the adress ranges only from 0 to 255)
 e) Output all comments (lines starting with a `#`) of all files with a name ending in `.conf`.
 
 
