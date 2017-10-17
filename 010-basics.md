@@ -37,10 +37,7 @@ Flags are options you can add to a command to change the way it behaves. The opt
 ### Wildcards
 
 Wildcards are placeholder symbols that are replaced when a command is read by the shell.
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 There are three different types of wild cards:
 
 * The star wildcard `*` acts as a placeholder for any number of consecutive symbols. For example, writing `*.jpg` addresses all files and folders that end with `.jpg`. Writing `D*s` addresses all files and folders that start with a `D` and end with a `s`, and so on. 
